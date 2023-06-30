@@ -1,9 +1,17 @@
 /* eslint-disable new-cap */
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Inter } from "next/font/google";
+// eslint-disable-next-line camelcase
+import { Playfair_Display, Source_Serif_4 } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+});
+const source = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-source",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -12,8 +20,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className={`${playfair.variable} ${source.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

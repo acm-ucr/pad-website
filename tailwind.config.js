@@ -6,7 +6,21 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        pad: {
+          black: "#222831",
+          beige: "#F7EFE5",
+          lightpuple: "#C3ACD0",
+          purple: "#745091",
+          darkpurple: "#674188",
+        },
+      },
+      fontFamily: {
+        source: ["var(--font-source)"],
+        playfair: ["var(--font-playfair)"],
+      },
+    },
   },
   plugins: [],
 };
