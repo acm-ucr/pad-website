@@ -4,7 +4,7 @@ import CourValuesSection from "@/components/CourValuesSection";
 import DeclarationOfPurpose from "@/components/DeclarationOfPurpose";
 const Home = () => {
   return (
-    <div className="w-screen flex felx-col min-h-screen overflow-hidden">
+    <div className="w-screen flex flex-col min-h-screen overflow-hidden">
       <Landing />
       <AboutSection />
       <CourValuesSection />
