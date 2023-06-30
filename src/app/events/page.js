@@ -1,5 +1,7 @@
 import React from "react";
 
-export const events = () => {
-  return <div>events</div>;
+const join = () => {
+  return <div>join</div>;
 };
+
+export default join;
