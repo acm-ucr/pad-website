@@ -9,11 +9,7 @@ const Navigation = () => {
   return (
     <Navbar
       collapseOnSelect
-      className=" py-0 font-playfair w-12/12 px-3 m-0 h-[8vh] border-b-3 bg-cover"
-      style={{
-        backgroundImage: `linear-gradient( to right, transparent, #674188), url("landing.png")`,
-        boxShadow: `0px 70px 5px rgba(0, 0, 0, 0.65) inset`,
-      }}
+      className=" py-0 font-playfair w-12/12 px-3 m-0 h-[8vh] border-b-3 !bg-black/50"
     >
       <div className="mb-1 w-14">
         <img src="LOGO.png"></img>
