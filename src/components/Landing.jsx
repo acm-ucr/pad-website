@@ -18,40 +18,37 @@ const Landing = () => {
           ></div>
           <div>
             {/* boxes */}
-            <div className="absolute -left-4 top-0 scale-75 rotate-90">
+            <div className="absolute -left-10 -top-4 scale-50 rotate-90">
               <Boxessvg color="#E7DBDF" />
             </div>
-            <div className="absolute top-0 -right-4 scale-75">
+            <div className="absolute -top-4 -right-10 scale-50">
               <Boxessvg color="#E7DBDF" />
             </div>
-            <div className="absolute -bottom-4 -left-4 scale-75">
+            <div className="absolute -bottom-9 -left-10 scale-50">
               <Boxessvg color="#E7DBDF" />
             </div>
-            <div className="absolute -bottom-4 -right-4 scale-75 rotate-90">
+            <div className="absolute -bottom-9 -right-10 scale-50 rotate-90">
               <Boxessvg color="#E7DBDF" />
             </div>
           </div>
           <div className="absolute bottom-24 -right-10 h-96">
             {/* text information */}
-            <h1
-              className="font-playfair text-white text-6xl bottom-4 relative right-52 underline 
-          underline-offset-8"
-            >
+            <h1 className="font-playfair font-bold text-white text-6xl bottom-4 relative right-56 underline decoration-[3px] underline-offset-[15px]  ">
               Phi Alpha Delta
             </h1>
-
-            <h2 className=" font-playfair text-white text-3xl relative left-30">
+            <p className="w-4 h-4 bg-white rounded-full absolute top-[47px] left-[204px]"></p>
+            <h2 className=" font-playfair text-white text-3xl relative -left-14">
               professional law and fraternity at UCR
             </h2>
 
-            <h2 className="font-playfair text-white text-xl relative right-44">
+            <h2 className="font-playfair text-white text-lg relative right-44">
               advancing intergrity, compassion, and courage through service to
               <ul>the student, the school, the profession and the community</ul>
             </h2>
             {/* Join Now box */}
             <div
-              className="box-content h-0 w-56  
-                 bg-[#745091] p-4 left-72 top-5 relative"
+              className="box-content h-0 w-64  
+                 bg-[#745091] p-4 left-48 top-5 relative"
             >
               <div
                 className="w-full h-0 right-6 bottom-6 relative
