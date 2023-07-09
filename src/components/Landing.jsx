@@ -1,6 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import landing from "../../public/landing.png";
 import Link from "next/link";
 import Boxessvg from "./Boxessvg";
 
