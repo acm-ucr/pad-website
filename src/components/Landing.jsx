@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import land from "../../public/landing.png";
+import landing from "../../public/landing.png";
 import Link from "next/link";
 import Boxessvg from "./Boxessvg";
 
@@ -9,27 +9,27 @@ const Landing = () => {
     <div>
       <div className=" relative h-full">
         {/* image/color gradient */}
-        <div
-          className="bg-gradient-to-r from-neutral-500 to-[#674188]
-      h-[100vh] w-full  "
-        >
-          <Image
-            src={land}
-            alt="landing"
-            className="w-full h-full object-cover absolute mix-blend-overlay"
-          />
+        <div className="h-[100vh] w-full ">
+          <div
+            className="w-full h-full object-fit"
+            style={{
+              backgroundImage:
+                " linear-gradient( to right, transparent, #674188), url('landing.png')",
+              backgroundSize: "cover",
+            }}
+          ></div>
           <div>
             {/* boxes */}
-            <div className="absolute left-0 top-0 scale-75 rotate-90">
+            <div className="absolute -left-4 top-0 scale-75 rotate-90">
               <Boxessvg color="#E7DBDF" />
             </div>
-            <div className="absolute top-4 right-0 scale-75">
+            <div className="absolute top-0 -right-4 scale-75">
               <Boxessvg color="#E7DBDF" />
             </div>
-            <div className="absolute bottom-0 left-0 scale-75">
+            <div className="absolute -bottom-4 -left-4 scale-75">
               <Boxessvg color="#E7DBDF" />
             </div>
-            <div className="absolute bottom-0 right-0 scale-75 rotate-90">
+            <div className="absolute -bottom-4 -right-4 scale-75 rotate-90">
               <Boxessvg color="#E7DBDF" />
             </div>
           </div>
