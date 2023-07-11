@@ -48,12 +48,12 @@ const Landing = () => {
             {/* Join Now box */}
             <div
               className="box-content h-0 w-64  
-                 bg-[#745091] p-4 left-48 top-5 relative"
+                 bg-pad-purple p-4 left-48 top-5 relative"
             >
               <div
                 className="w-full h-0 right-6 bottom-6 relative
                   border-t-[24px] border-t-transparent
-                  border-l-[24px] border-l-[#C3ACD0]
+                  border-l-[24px] border-l-pad-lightpurple
                   border-b-[24px] border-b-transparent"
               >
                 <Link
