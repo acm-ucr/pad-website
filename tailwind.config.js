@@ -11,7 +11,7 @@ module.exports = {
         pad: {
           black: "#222831",
           beige: "#F7EFE5",
-          lightpuple: "#C3ACD0",
+          lightpurple: "#C3ACD0",
           purple: "#745091",
           darkpurple: "#674188",
         },
