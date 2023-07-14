@@ -3,9 +3,9 @@ import Scalesvg from "./Scalesvg";
 
 const DeclarationOfPurpose = () => {
   return (
-    <div className=" w-8/12 relative flex justify-start !bg-pad-darkpurple overflow-hidden">
-      <div className=" w-3/4  bg-[url(/PAD1.png)] bg-no-repeat"></div>
-      <div className=" scale-90 translate-x-20 translate-y-7">
+    <div className=" w-full relative flex justify-between !bg-pad-darkpurple overflow-hidden">
+      <div className=" w-1/2  bg-[url(/PAD1.png)] bg-cover"></div>
+      <div className="scale-90 -mr-10 ">
         <Scalesvg color="#745091"></Scalesvg>
       </div>
       <div className="font-playfair bottom-14 -right-12 w-1/2 absolute !text-pad-beige text-xl">

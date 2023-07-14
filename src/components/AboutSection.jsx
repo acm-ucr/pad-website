@@ -7,7 +7,7 @@ import Link from "next/link.js";
 
 const AboutSection = () => {
   return (
-    <div className="w-full relative flex font-playfair">
+    <div className="w-full relative flex font-playfair h-[800px] items-center">
       <div className="rotate-90 origin-bottom-left top-0 left-0 absolute -translate-y-full">
         <PADsvg color="#E7DBDF" />
       </div>
