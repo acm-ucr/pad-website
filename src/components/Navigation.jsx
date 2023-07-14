@@ -27,14 +27,14 @@ const Navigation = () => {
           <Nav className="mb-2 w-12/12 no-underline ml-auto text-2xl">
             <Nav.Link
               eventkey="6"
-              href="/"
+              href="/about"
               className="mb-0 py-1 px-4 no-underline ml-auto !text-white text-2xl whitespace-nowrap w-full text-center !font-medium hover: hover:cursor-pointer"
             >
               About
             </Nav.Link>
             <Nav.Link
               eventkey="2"
-              href="/about"
+              href="/events"
               className="mb-0 py-1 px-4 no-underline ml-auto !text-white text-2xl whitespace-nowrap w-full text-center !font-medium hover: hover:cursor-pointer"
             >
               Events
@@ -48,7 +48,7 @@ const Navigation = () => {
             </Nav.Link>
             <Nav.Link
               eventkey="4"
-              href="/events"
+              href="/contacts"
               className="mb-0 py-1 px-4 no-underline ml-auto !text-white text-2xl whitespace-nowrap w-full text-center !font-medium hover: hover:cursor-pointer"
             >
               Contacts

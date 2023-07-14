@@ -3,7 +3,7 @@ import Scalesvg from "./Scalesvg";
 
 const DeclarationOfPurpose = () => {
   return (
-    <div className=" w-full relative flex justify-between !bg-pad-darkpurple overflow-hidden">
+    <div className=" w-full relative flex justify-between !bg-pad-darkpurple overflow-hidden my-5">
       <div className=" w-1/2  bg-[url(/PAD1.png)] bg-cover"></div>
       <div className="scale-90 -mr-10 ">
         <Scalesvg color="#745091"></Scalesvg>
