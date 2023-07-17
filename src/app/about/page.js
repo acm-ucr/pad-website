@@ -1,7 +1,12 @@
 import React from "react";
+import CoreValueCard from "@/components/CoreValueCard";
 
 const about = () => {
-  return <div>about</div>;
+  return (
+    <div>
+      <CoreValueCard />
+    </div>
+  );
 };
 
 export default about;
