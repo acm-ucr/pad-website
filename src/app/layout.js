@@ -1,4 +1,6 @@
 /* eslint-disable new-cap */
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // eslint-disable-next-line camelcase
@@ -21,7 +23,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${playfair.variable} ${source.variable}`}>
-      <body>{children}</body>
+      <body className=" bg-pad-beige">
+        <Navigation />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
