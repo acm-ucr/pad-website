@@ -6,7 +6,7 @@ const about = () => {
   return (
     <div>
       <CoreValueCard />
-      <Title/>
+      <Title />
     </div>
   );
 };
