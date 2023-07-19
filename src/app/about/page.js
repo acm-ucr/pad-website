@@ -1,10 +1,12 @@
 import React from "react";
 import Title from "@/components/Title";
+import CoreValueCard from "@/components/CoreValueCard";
+
 const about = () => {
   return (
     <div>
-      about
-      <Title />
+      <CoreValueCard />
+      <Title/>
     </div>
   );
 };
