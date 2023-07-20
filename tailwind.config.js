@@ -14,6 +14,7 @@ module.exports = {
           lightpurple: "#C3ACD0",
           purple: "#745091",
           darkpurple: "#674188",
+          textshadow: "#E7DBDF",
         },
       },
       fontFamily: {
