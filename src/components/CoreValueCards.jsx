@@ -1,7 +1,8 @@
 import React from "react";
+import CoreValueCard from "./CoreValueCard";
 
 const CoreValueCards = () => {
-  return <div></div>;
+  return <CoreValueCard />;
 };
 
 export default CoreValueCards;
