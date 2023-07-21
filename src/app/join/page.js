@@ -1,7 +1,14 @@
 import React from "react";
+import join from "../../../public/join.png";
+import Header from "@/components/Header";
 
-const join = () => {
-  return <div>join</div>;
+const page = () => {
+  return (
+    <div>
+      <Header title="Join" src={join} />
+      join
+    </div>
+  );
 };
 
-export default join;
+export default page;

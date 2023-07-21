@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const Header = ({ src, title }) => {
   return (
-    <div className=" relative w-full  overflow-hidden  justify-between">
-      <Image src={src} alt="header img" />
-      <div className="absolute -left-16  bottom-60 ml-[55%] text-4xl text-pad-beige font-bold -translate-y-1/4 ">
-        <p className="flex  px-4 py-2 -translate-y-full border-solid border-1 border-beige-50 ">
+    <div className="relative w-full h-[60vh] overflow-clip">
+      <Image src={src} alt="header img" className="w-full bg-contain" />
+      <div className="absolute bg-gradient-to-b from-transparent to-[#331B48] h-full w-full absolute-0 top-0 flex items-center justify-center">
+        <p className="px-8 py-2 border-solid border-1 border-pad-beige text-5xl text-pad-beige font-bold font-playfair">
           {title}
         </p>
       </div>
