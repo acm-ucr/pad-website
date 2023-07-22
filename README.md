@@ -9,6 +9,9 @@
 ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 
+## Figma
+[UCR Phi Alpha Delta Official Website Figma Design File](https://www.figma.com/file/6FTXStJnmz3ltBSM1OtgAE/Phi-Alpha-Delta-Pre-Law-Fraternity?type=design&mode=design&t=WU6yx2XpUb1H05aO-1)
+
 ## Node.js
 
 UCR Phi Alpha Delta Official Website runs on Node.js Version 16.17.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
