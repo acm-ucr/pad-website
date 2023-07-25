@@ -67,7 +67,7 @@ const Navigation = () => {
           </Nav>
         </Navbar.Collapse>
         <Navbar.Toggle
-          className="list-unstyled !text-transparent"
+          className="list-unstyled !text-transparent border-0"
           aria-controls="basic-navbar-nav"
         >
           <FaBars className=" text-white text-xl" />
