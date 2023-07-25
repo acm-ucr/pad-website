@@ -3,7 +3,7 @@ import React from "react";
 import join from "../../../public/join.png";
 import Header from "@/components/Header";
 
-const join = () => {
+const page = () => {
   return (
     <div>
       <Header title="Join" src={join} />
