@@ -1,7 +1,14 @@
 import React from "react";
+import contacts from "../../../public/contacts.png";
+import Header from "@/components/Header";
 
-const contacts = () => {
-  return <div>contacts</div>;
+const page = () => {
+  return (
+    <div>
+      <Header title="Contacts" src={contacts} />
+      contacts
+    </div>
+  );
 };
 
-export default contacts;
+export default page;
