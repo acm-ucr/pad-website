@@ -23,9 +23,9 @@ const coreValues = [
 ];
 const CoreValueCards = () => {
   return (
-    <Row>
+    <Row className="w-10/12 -mt-12">
       {coreValues.map((coreValue, index) => (
-        <Col className="p-0" key={index}>
+        <Col className="p-0 group" key={index}>
           <CoreValueCard icon={coreValue.icon} text={coreValue.text} />
         </Col>
       ))}
