@@ -6,18 +6,22 @@ import Boxessvg from "./Boxessvg";
 const Picture = () => {
   return (
     <div className="relative w-1/2">
-      <div className="absolute right-0 top-0 translate-x-full -translate-y-full">
-        <Boxessvg color="black" className="stroke-pad-purple" />
-      </div>
-      <div className="absolute left-0 top-0 -translate-x-full -translate-y-full rotate-90">
-        <Boxessvg color="#ff0000" />
-      </div>
-      <div className="absolute right-0 bottom-0 translate-x-full translate-y-full rotate-90">
-        <Boxessvg color="#ff0000" />
-      </div>
-      <div className="absolute left-0 bottom-0 -translate-x-full translate-y-full">
-        <Boxessvg color="#ff0000" />
-      </div>
+      <Boxessvg
+        color="#745091"
+        className="absolute right-0 top-0 translate-x-full -translate-y-full w-16 h-16"
+      />
+      <Boxessvg
+        color="#745091"
+        className="absolute left-0 top-0 -translate-x-full -translate-y-full rotate-90 w-16 h-16"
+      />
+      <Boxessvg
+        color="#745091"
+        className="absolute right-0 bottom-0 translate-x-full translate-y-full rotate-90 w-16 h-16"
+      />
+      <Boxessvg
+        color="#745091"
+        className="absolute left-0 bottom-0 -translate-x-full translate-y-full w-16 h-16"
+      />
       <Image src={PAD3} className="w-full" />
     </div>
   );
