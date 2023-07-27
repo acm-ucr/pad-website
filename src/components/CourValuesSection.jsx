@@ -5,8 +5,10 @@ import CoreValues from "./CoreValues";
 const CourValuesSection = () => {
   return (
     <div className="flex items-center justify-center m-5">
-      <CoreValueTitle />
-      <CoreValues />
+      <div className="flex flex-col w-fit items-stretch">
+        <CoreValueTitle />
+        <CoreValues />
+      </div>
     </div>
   );
 };

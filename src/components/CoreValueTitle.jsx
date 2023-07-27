@@ -2,7 +2,7 @@ import React from "react";
 
 const CoreValueTitle = () => {
   return (
-    <div className="flex flex-col h-52 justify-between bg-pad-darkpurple w-2/5 items-start relative">
+    <div className="flex flex-col h-52 justify-between bg-pad-darkpurple items-start relative w-full">
       <div className="h-full w-full border-4 border-pad-lightpurple absolute -left-5 -top-5 z-0" />
       <div className="flex flex-col h-full justify-between bg-pad-darkpurple w-full items-start relative z-10">
         <div className="flex h-14 w-full justify-end relative">
