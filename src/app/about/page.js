@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 
 const page = () => {
   return (
-    <div>
+    <div className="w-full">
       <Header title="About" src={about} />
       <CoreValueCards />
       <Title />
