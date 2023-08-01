@@ -9,7 +9,7 @@ const page = () => {
     <div className="w-full flex flex-col items-center">
       <Header title="About" src={about} />
       <CoreValueCards />
-      <Title />
+      <Title title="Who We Are" />
     </div>
   );
 };
