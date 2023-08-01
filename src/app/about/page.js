@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 
 const page = () => {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col items-center">
       <Header title="About" src={about} />
       <CoreValueCards />
       <Title />
