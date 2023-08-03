@@ -19,7 +19,7 @@ const CoreValues = () => {
           key={value}
           className="flex items-center font-playfair text-2xl py-1.5"
         >
-          <PiDiamondsFourBold className="text-2xl text-pad-lightpurple mr-3" />
+          <PiDiamondsFourBold className=" text-2xl text-pad-lightpurple mr-3" />
           {value}
         </div>
       ))}

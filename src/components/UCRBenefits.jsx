@@ -2,8 +2,8 @@ import React from "react";
 
 const UCRBenefits = () => {
   return (
-    <div className="w-full h-96">
-      <div className="flex justify-end">
+    <div className="w-full h-296 -translate-y-2/4">
+      <div className="flex justify-end -translate-y-3/4 ">
         <div className="relative right-32">
           <div className="text-pad-purple font-bold font-playfair text-2xl">
             <span className="bg-gradient-to-r from-pad-lightpurple to-pad-lightpurple bg-[length:100%_3px] bg-no-repeat bg-bottom pb-1">
