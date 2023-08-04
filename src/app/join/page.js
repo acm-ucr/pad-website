@@ -6,10 +6,10 @@ import HowToJoin from "@/components/HowToJoin";
 
 const page = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Header title="Join" src={join} />
-      <HowToJoin />
       <UCRBenefits />
+      <HowToJoin />
     </div>
   );
 };
