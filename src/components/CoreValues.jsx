@@ -13,13 +13,13 @@ const values = [
 
 const CoreValues = () => {
   return (
-    <div className="columns-2">
+    <div className="columns-2 w-1/2">
       {values.map((value) => (
         <div
           key={value}
-          className="flex items-center font-playfair text-2xl py-1.5"
+          className="flex items-center font-playfair text-md md:text-2xl py-1.5"
         >
-          <PiDiamondsFourBold className="text-2xl text-pad-lightpurple mr-3" />
+          <PiDiamondsFourBold className="text-lg md:text-2xl text-pad-lightpurple mr-3" />
           {value}
         </div>
       ))}
