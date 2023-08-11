@@ -12,10 +12,10 @@ const Board = () => {
             </p>
             <div
               className="w-0 h-0 
-                  border-l-[0px] border-l-transparent
-                  border-t-[32.5px] border-t-pad-purple
-                  border-r-[40px] border-r-transparent
-                  relative bottom-12 left-48"
+                border-l-[0px] border-l-transparent
+                border-t-[32.5px] border-t-pad-purple
+                border-r-[40px] border-r-transparent
+                relative bottom-12 left-48"
             ></div>
           </div>
           <div className="bg-pad-lightpurple w-48 h-8 shadow">
