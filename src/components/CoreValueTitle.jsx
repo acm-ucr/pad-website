@@ -11,11 +11,11 @@ const CoreValueTitle = () => {
           <div className="h-14 w-1.5 mr-1.5 bg-pad-lightpurple"></div>
           <div className="h-8 w-1.5 mr-1.5 bg-pad-lightpurple"></div>
         </div>
-        <div className="m-4 relative">
-          <p className="text-3xl text-pad-beige font-playfair font-bold pr-2">
+        <div className="my-2 md:my-4 mx-4 relative">
+          <p className="text-xl md:text-3xl text-pad-beige font-playfair font-bold pr-2">
             Core Values
           </p>
-          <p className="whitespace-normal text-sm text-pad-beige font-playfair w-10/12">
+          <p className="whitespace-normal texr-xs md:text-sm text-pad-beige font-playfair w-full md:w-10/12">
             Bound together by tradition and our common interest in the law, we
             share these core values
           </p>

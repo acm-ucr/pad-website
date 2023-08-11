@@ -3,29 +3,25 @@ import { PiDiamondsFourBold } from "react-icons/pi";
 
 const HowToJoin = () => {
   return (
-    <div className="relative w-full flex text-align-bottom justify-between items-center h-[580px] top-20 translate-y-[350px] ">
-      <div className="relative translate-x-1/6 ">
-        <p className="text-pad-purple text-center text-2xl relative top-2">
-          Open Membership Policy
+    <div className="w-10/12 font-playfair">
+      <p className="text-pad-purple text-2xl w-full font-bold">
+        Open Membership Policy
+      </p>
+
+      <div className="flex items-center ml-[20%]">
+        <PiDiamondsFourBold className="text-2xl m-2 text-pad-purple" />
+        <p className="text-2xl text-black font-source m-0">Payments</p>
+      </div>
+      <div className="ml-[25%] text-black text-lg">
+        <li className="list-disc">
+          $125 one time Nationals Fee(not pay nationals untile further notice)
+        </li>
+        <p className="mt-2 mb-3 text-pad-purple text-l px-4 py-1 border-solid border-1 w-fit border-pad-black">
+          Pay At The Phi Alpha Delta website
         </p>
+        <li className="">Chapter Fee is QUARTERLY</li>
 
-        <div className="relative items-center translate-x-2/4">
-          <PiDiamondsFourBold className="relative right-5 top-5" />
-          <p className=" text-black font-source text-l">Payments</p>
-        </div>
-        <div className="relative  translate-x-2/4 left-2">
-          <li className=" text-black font-source text-l list-disc">
-            $125 one time Nationals Fee(not pay nationals untile further notice)
-          </li>
-          <div className="relative left-4 top-4 ">
-            <p className="text-pad-purple text-l px-4 py-1 border-solid border-1 w-80 border-pad-black underline">
-              Pay At The Phi Alpha Delta website
-            </p>
-            <li className="relative left-4">Chapter Fee is QUARTERLY</li>
-
-            <li className="relative left-10">Pay to our Treasurers Venmo</li>
-          </div>
-        </div>
+        <li className="ml-4">Pay to our Treasurers Venmo</li>
       </div>
     </div>
   );
