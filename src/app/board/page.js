@@ -2,7 +2,6 @@ import Board from "@/components/Board";
 import React from "react";
 import board from "../../../public/board.png";
 import Header from "@/components/Header";
-import Board from "@/components/Board";
 import Picture from "@/components/Picture";
 
 const page = () => {
