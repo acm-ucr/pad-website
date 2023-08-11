@@ -28,10 +28,10 @@ const ContactLinkTree = () => {
   return (
     <div className="flex flex-row -translate-y-48 h-screen w-3/4 m-auto  items-center justify-center">
       <div className="bg-white h-5/6 w-full">
-        <div className="font-playfair text-8xl text-pad-lightpurple font-bold translate-x-20 translate-y-20">
+        <div className="font-playfair text-6xl text-pad-lightpurple font-bold translate-x-20 translate-y-20">
           Email Us
         </div>
-        <div className="text-3xl font-normal font-playfair translate-x-36 translate-y-72">
+        <div className="text-2xl font-normal font-playfair translate-x-36 translate-y-72">
           <a
             href="mailto:membership@ucrpad.org"
             className="text-decoration-none text-pad-purple hover:text-pad-darkpurple"
@@ -39,7 +39,7 @@ const ContactLinkTree = () => {
             membership@ucrpad.org
           </a>
         </div>
-        <div className="text-3xl font-playfair translate-x-36 translate-y-80">
+        <div className="text-2xl font-playfair translate-x-36 translate-y-80">
           <a
             href="mailto:president@ucrpad.org"
             className="text-decoration-none text-pad-purple hover:text-pad-darkpurple"

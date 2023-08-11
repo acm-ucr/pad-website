@@ -13,7 +13,7 @@ const values = [
 
 const CoreValues = () => {
   return (
-    <div className="columns-2 w-1/2">
+    <div className="columns-2 w-3/4">
       {values.map((value) => (
         <div
           key={value}

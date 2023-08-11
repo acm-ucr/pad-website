@@ -6,13 +6,17 @@ import PAD2 from "../../public/PAD2.png";
 
 const CourValuesSection = () => {
   return (
-    <div className="flex items-center justify-center m-5">
-      <div className="flex flex-col w-fit items-stretch">
-        <CoreValueTitle />
-        <CoreValues />
-        <div className="w-[450px] absolute right-3 translate-y-1/4 -translate-x-2/4 ">
-          <Image src={PAD2} className="" />
+    <div className="w-full mt-32">
+      <div className="flex items-end  flex-col-reverse relative w-full md:flex-row md:justify-end md:items-start">
+        <div className="w-full justify-center md:justify-end flex md:mt-48">
+          <CoreValues />
         </div>
+        <Image src={PAD2} className="z-10 w-4/5 md:w-1/2" />
+        <CoreValueTitle
+          className={
+            "w-3/4 flex flex-col md:w-1/2 z-50 absolute -top-32 left-6 md:left-16"
+          }
+        />
       </div>
     </div>
   );
