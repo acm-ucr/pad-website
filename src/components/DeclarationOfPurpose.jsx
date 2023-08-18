@@ -1,12 +1,20 @@
+"use client";
 import React from "react";
 import Scalesvg from "./Scalesvg";
 import PAD1 from "../../public/PAD1.png";
 import Image from "next/image";
+import { Col, Row } from "react-bootstrap";
 const DeclarationOfPurpose = () => {
   return (
-    <div className="items-stretch w-full relative flex flex-col md:flex-row justify-between !overflow-clip my-5">
-      <Image src={PAD1} className="w-full md:w-1/2 h-full object-cover " />
-      <div className="relative bg-pad-darkpurple flex flex-col w-full md:w-1/2 justify-between py-10">
+    <Row className="items-stretch w-full flex flex-col md:flex-row justify-between my-5 mx-0 p-0">
+      <Col xs={12} md={6} className="p-0 m-0">
+        <Image src={PAD1} className="w-full h-full object-cover" />
+      </Col>
+      <Col
+        xs={12}
+        md={6}
+        className="relative bg-pad-darkpurple flex flex-col justify-between py-10 overflow-hidden px-0 m-0"
+      >
         <Scalesvg
           color="#745091"
           className="absolute top-1/2 -translate-y-1/2 right-0"
@@ -14,7 +22,7 @@ const DeclarationOfPurpose = () => {
         <div className="relative font-playfair py-1 text-center text-md md:text-2xl w-4/5 border-t-2 border-l-2 border-b-2 text-pad-beige border-pad-beige self-end mb-10">
           DECLARATION OF PURPOSE
         </div>
-        <div className="relative font-playfair w-3/4 text-pad-beige text-md md:text-xl justify-self-end self-center">
+        <div className="relative font-playfair w-3/4 text-pad-beige text-md md:text-lg lg:text-xl justify-self-end self-center">
           The purpose of this Fraternity shall be to form a strong bond uniting
           students and teachers of the lawwith members of the Bench and Bar in a
           fraternal fellowship designed to advance the ideals of liberty and
@@ -25,8 +33,8 @@ const DeclarationOfPurpose = () => {
           so that each member may enjoy a life time of honorable professional
           and public service.
         </div>
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 };
 
