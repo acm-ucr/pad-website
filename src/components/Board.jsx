@@ -51,7 +51,7 @@ const Board = () => {
                     {member.position}
                   </p>
                   <div
-                    className="w-0 h-0 
+                    className="w-0 h-0 =
                 border-l-[0px] border-l-transparent
                 border-t-[32.5px] border-t-pad-purple
                 border-r-[40px] border-r-transparent

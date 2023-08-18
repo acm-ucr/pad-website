@@ -1,8 +1,9 @@
 import React from "react";
 
-const Boxessvg = ({ color }) => {
+const Boxessvg = ({ color, className }) => {
   return (
     <svg
+      className={className}
       width="200"
       height="203"
       viewBox="0 0 200 203"
