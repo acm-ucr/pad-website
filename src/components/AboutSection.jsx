@@ -7,7 +7,7 @@ import Link from "next/link.js";
 
 const AboutSection = () => {
   return (
-    <div className="w-full relative flex font-playfair h-[800px] items-center flex-col">
+    <div className="w-full relative flex font-playfair h-[600px] md:h-[700px] items-center flex-col">
       <PADsvg
         color="#E7DBDF"
         className="rotate-90 origin-bottom-left top-10 -left-20 md:left-0 absolute -translate-y-full w-1/2"
@@ -28,11 +28,11 @@ const AboutSection = () => {
 
         <div className="w-full flex justify-end">
           <Link
-            className="bg-pad-purple h-12 flex items-center no-underline justify-start mr-48"
+            className="bg-pad-purple h-8 md:h-12 flex items-center no-underline justify-start mr-10 md:mr-48"
             href="/about"
           >
             <Image src={triangle} className="h-full m-0" />
-            <p className="px-16 m-0 font-bold text-pad-beige text-3xl">
+            <p className="px-8 md:px-16 m-0 font-bold text-pad-beige text-lg md:text-3xl whitespace-nowrap">
               Learn More
             </p>
           </Link>
