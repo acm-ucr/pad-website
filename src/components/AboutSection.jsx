@@ -7,20 +7,19 @@ import Link from "next/link.js";
 
 const AboutSection = () => {
   return (
-    <div className="w-full relative flex font-playfair h-[800px] items-center">
-      <div className="rotate-90 origin-bottom-left top-0 left-0 absolute -translate-y-full">
-        <PADsvg color="#E7DBDF" />
-      </div>
-      <div className="absolute top-5 right-5">
-        <Boxessvg color="#E7DBDF" />
-      </div>
-      <div className="ml-[30%] w-full mt-24">
-        <p className="text-4xl text-pad-lightpurple font-bold ml-8 ">
+    <div className="w-full relative flex font-playfair h-[600px] md:h-[700px] items-center flex-col">
+      <PADsvg
+        color="#E7DBDF"
+        className="rotate-90 origin-bottom-left top-10 -left-20 md:left-0 absolute -translate-y-full w-1/2"
+      />
+      <Boxessvg color="#E7DBDF" className="w-1/6 self-end md:mr-5 h-fit mt-2" />
+      <div className="w-3/4 self-end">
+        <p className="text-xl md:text-4xl text-pad-lightpurple font-bold ml-8 my-0 md:my-2">
           About Us
         </p>
-        <div className="text-5xl font-bold border-l-8 border-pad-lightpurple p-3">
+        <div className="text-2xl md:text-5xl font-bold border-l-8 border-pad-lightpurple py-3 pl-3">
           <p>Welcome to Phi Alpha Delta</p>
-          <p className="text-2xl w-2/3">
+          <p className="text-base md:text-2xl w-2/3">
             We are the preeminent law fraternity promoting the bonds of
             fraternalism and we are theleader in the devolopment advancement of
             professional ideals.
@@ -29,11 +28,11 @@ const AboutSection = () => {
 
         <div className="w-full flex justify-end">
           <Link
-            className="bg-pad-purple h-12 flex items-center no-underline justify-start mr-48"
+            className="bg-pad-purple h-8 md:h-12 flex items-center no-underline justify-start mr-10 md:mr-48"
             href="/about"
           >
             <Image src={triangle} className="h-full m-0" />
-            <p className="px-16 m-0 font-bold text-pad-beige text-3xl">
+            <p className="px-8 md:px-16 m-0 font-bold text-pad-beige text-lg md:text-3xl whitespace-nowrap">
               Learn More
             </p>
           </Link>

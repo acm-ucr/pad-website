@@ -7,7 +7,9 @@ const page = () => {
   return (
     <div>
       <Header title="Board" src={board} />
-      <Board />
+      <div className="flex justify-center">
+        <Board />
+      </div>
     </div>
   );
 };
