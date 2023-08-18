@@ -3,6 +3,7 @@ import Link from "next/link";
 import Boxessvg from "./Boxessvg";
 import landing from "../../public/landing.png";
 import Image from "next/image";
+import triangle from "../../public/triangle.svg";
 
 const Landing = () => {
   return (
@@ -41,12 +42,7 @@ const Landing = () => {
             href="/join"
             className="animate-fade-up animate-delay-[800ms] relative box-content w-1/2 flex bg-pad-darkpurple no-underline self-end"
           >
-            <div
-              className="w-fit h-0 absolute left-0
-              border-t-[16px] md:border-t-[24px] border-t-transparent
-              border-l-[16px]    md:border-l-[24px] border-l-pad-lightpurple
-              border-b-[16px]    md:border-b-[24px] border-b-transparent"
-            />
+            <Image src={triangle} className="h-full m-0" />
             <p className="m-0 pl-20 py-1 md:py-2 font-source text-white text-base md:text-2xl whitespace-nowrap">
               Join Us
             </p>
