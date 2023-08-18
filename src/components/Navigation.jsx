@@ -29,19 +29,21 @@ const Navigation = () => {
       collapseOnSelect
       expand="md"
       fixed="top"
-      className="w-full m-0 h-[8vh] p-0"
+      className="w-full m-0 md:h-[8vh] p-0"
     >
       <div className="flex px-3 py-0 font-playfair w-full m-0 !bg-black/50 min-h-full justify-between">
         <Navbar.Brand className="p-0">
           <Link
             eventkey="1"
-            className="p-0 no-underline flex items-center"
+            className="p-0 no-underline flex items-center gap-2"
             href="/"
           >
-            <img src="LOGO.png" className=" w-14" />
+            <img src="LOGO.png" className="w-8 md:w-14" />
             <div className="flex flex-col items-start">
-              <div className="!text-white mb-0 text-3xl">ΦA∆</div>
-              <div className="!text-white text-xs">Phi Alpha Delta</div>
+              <div className="text-white mb-0 text-lg md:text-3xl">ΦA∆</div>
+              <div className="text-white text-xs md:text-sm">
+                Phi Alpha Delta
+              </div>
             </div>
           </Link>
         </Navbar.Brand>
