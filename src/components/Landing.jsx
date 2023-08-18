@@ -5,7 +5,7 @@ import Boxessvg from "./Boxessvg";
 const Landing = () => {
   return (
     <div>
-      <div className=" relative h-full">
+      <div className=" relative h-full ">
         {/* image/color gradient */}
         <div className="h-[100vh] w-full ">
           <div
@@ -18,7 +18,7 @@ const Landing = () => {
           ></div>
           <div>
             {/* boxes */}
-            <div className="absolute -left-10 -top-4 scale-50 rotate-90">
+            <div className="absolute -left-10 -top-4 scale-50 rotate-90 md:justify-end ">
               <Boxessvg color="#E7DBDF" />
             </div>
             <div className="absolute -top-4 -right-10 scale-50">
@@ -31,17 +31,17 @@ const Landing = () => {
               <Boxessvg color="#E7DBDF" />
             </div>
           </div>
-          <div className="absolute bottom-24 -right-10 h-96">
+          <div className="absolute bottom-24 -right-10 ledt-10 h-96 md:text-3xl">
             {/* text information */}
-            <h1 className="font-playfair font-bold text-white text-6xl bottom-4 relative right-56 underline decoration-[3px] underline-offset-[15px]  ">
+            <h1 className="font-playfair font-bold text-white md:text-3xl text-lg bottom-4 relative -right-18 md:right-60 left-14 underline decoration-[3px] underline-offset-[15px]  ">
               Phi Alpha Delta
             </h1>
-            <p className="w-4 h-4 bg-white rounded-full absolute top-[47px] left-[204px]"></p>
-            <h2 className=" font-playfair text-white text-3xl relative -left-14">
+            <p className="w-4 h-4 bg-white rounded-full absolute top-[47px] md:left-[206px] md:right-24 "></p>
+            <h2 className=" font-playfair text-white md:text-3xl text-lg relative left-9">
               professional law and fraternity at UCR
             </h2>
 
-            <h2 className="font-playfair text-white text-lg relative right-44">
+            <h2 className=" font-playfair text-white md:text-3xl text-lg relative left-2 md:right-41">
               advancing intergrity, compassion, and courage through service to
               <ul>the student, the school, the profession and the community</ul>
             </h2>
@@ -60,7 +60,7 @@ const Landing = () => {
                   href="/join"
                   className="font-source text-white text-2xl bottom-4 left-6 relative"
                 >
-                  <button>Join Us</button>
+                  <button className="md:w-20">Join Us</button>
                 </Link>
               </div>
             </div>
