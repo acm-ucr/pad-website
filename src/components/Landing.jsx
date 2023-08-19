@@ -40,7 +40,7 @@ const Landing = () => {
           </p>
           <Link
             href="/join"
-            className="animate-fade-up animate-delay-[800ms] relative box-content w-1/2 flex bg-pad-darkpurple no-underline self-end"
+            className="mt-3 items-center animate-fade-up animate-delay-[800ms] relative box-content w-1/2 flex bg-pad-darkpurple no-underline self-end"
           >
             <Image src={triangle} className="h-full m-0" />
             <p className="m-0 pl-20 py-1 md:py-2 font-source text-white text-base md:text-2xl whitespace-nowrap">
