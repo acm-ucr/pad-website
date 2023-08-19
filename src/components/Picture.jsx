@@ -1,9 +1,8 @@
 import React from "react";
-import PAD3 from "../../public/PAD3.png";
 import Image from "next/image";
 import Boxessvg from "./Boxessvg";
 
-const Picture = () => {
+const Picture = ({ picture }) => {
   return (
     <div className="relative w-1/2">
       <Boxessvg
@@ -22,7 +21,7 @@ const Picture = () => {
         color="#745091"
         className="absolute left-0 bottom-0 -translate-x-full translate-y-full w-16 h-16"
       />
-      <Image src={PAD3} className="w-full" />
+      <Image src={picture} className="w-full" />
     </div>
   );
 };

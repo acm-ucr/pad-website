@@ -1,13 +1,19 @@
 import UCRBenefits from "@/components/UCRBenefits";
+import NationalBenefits from "@/components/NationalBenefits";
 import React from "react";
 import join from "../../../public/join.png";
 import Header from "@/components/Header";
+import HowToJoin from "@/components/HowToJoin";
 
 const page = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Header title="Join" src={join} />
-      <UCRBenefits />
+      <div className="flex flex-row">
+        <NationalBenefits />
+        <UCRBenefits />
+      </div>
+      <HowToJoin />
     </div>
   );
 };
