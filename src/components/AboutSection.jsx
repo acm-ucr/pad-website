@@ -28,7 +28,7 @@ const AboutSection = () => {
 
         <div className="w-full flex justify-end">
           <Link
-            className="bg-pad-purple h-8 md:h-12 flex items-center no-underline justify-start mr-10 md:mr-48"
+            className="bg-pad-purple h-8 md:h-12 flex items-center no-underline justify-start mr-10 md:mr-48 hover:scale-105 hover:cursor-pointer hover:ease-in-out hover:duration-500"
             href="/about"
           >
             <Image src={triangle} className="h-full m-0" />

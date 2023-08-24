@@ -62,7 +62,7 @@ const Navigation = () => {
             <Nav.Link
               eventkey="5"
               href="/join"
-              className="mt-1 pt-0 pb-1 px-3 no-underline ml-auto !text-white !bg-pad-darkpurple text-2xl whitespace-nowrap w-full text-center !font-medium hover: hover:cursor-pointer"
+              className="mt-1 pt-0 pb-1 px-3 no-underline ml-auto !text-white !bg-pad-darkpurple text-2xl whitespace-nowrap w-full text-center !font-medium transition-transform ease-in-out hover:scale-125 hover:cursor-pointer duration-500"
             >
               Join
             </Nav.Link>
