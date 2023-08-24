@@ -1,6 +1,6 @@
 import React from "react";
 import PADsvg from "./PADsvg.jsx";
-import Boxessvg from "./Boxessvg";
+import Boxessvg from "./svg/Boxessvg.jsx";
 import triangle from "../../public/triangle.svg";
 import Image from "next/image.js";
 import Link from "next/link.js";

@@ -3,7 +3,7 @@ import React from "react";
 import board from "../../../public/board.png";
 import Header from "@/components/Header";
 
-const page = () => {
+const BoardPage = () => {
   return (
     <div>
       <Header title="Board" src={board} />
@@ -14,4 +14,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default BoardPage;

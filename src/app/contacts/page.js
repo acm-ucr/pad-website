@@ -3,7 +3,7 @@ import contacts from "../../../public/contacts.png";
 import Header from "@/components/Header";
 import ContactLinkTree from "@/components/ContactLinkTree";
 
-const page = () => {
+const ContactsPage = () => {
   return (
     <div>
       <Header title="Contacts" src={contacts} />
@@ -12,4 +12,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ContactsPage;

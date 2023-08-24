@@ -5,7 +5,7 @@ import join from "../../../public/join.png";
 import Header from "@/components/Header";
 import HowToJoin from "@/components/HowToJoin";
 
-const page = () => {
+const JoinPage = () => {
   return (
     <div className="flex flex-col items-center">
       <Header title="Join" src={join} />
@@ -18,4 +18,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default JoinPage;

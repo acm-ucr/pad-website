@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Boxessvg from "./Boxessvg";
+import Boxessvg from "./svg/Boxessvg";
 
 const Picture = ({ picture }) => {
   return (
