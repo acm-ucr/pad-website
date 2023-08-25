@@ -42,8 +42,12 @@ const Landing = () => {
             href="/join"
             className="mt-3 items-center animate-fade-up animate-delay-[800ms] relative box-content w-1/2 flex bg-pad-darkpurple no-underline self-end"
           >
-            <Image src={triangle} className="h-full m-0" alt="triangle" />
-            <p className="m-0 pl-20 py-1 md:py-2 font-source text-white text-base md:text-2xl whitespace-nowrap">
+            <Image
+              src={triangle}
+              className="h-full w-auto m-0"
+              alt="triangle"
+            />
+            <p className="m-0 pl-6 md:pl-20 py-1 md:py-2 font-source text-white text-base md:text-2xl whitespace-nowrap">
               Join Us
             </p>
           </Link>

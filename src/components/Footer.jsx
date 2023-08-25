@@ -9,13 +9,12 @@ import LOGO from "../../public/LOGO.png";
 const Footer = () => {
   return (
     <div className="relative w-full bg-pad-purple h-[375px] overflow-hidden flex justify-between items-end">
-      <div className="absolute bottom-0 right-0 scale-50 translate-x-1/4 translate-y-1/4 ">
-        <PADsvg color="#674188" />
-      </div>
+      <PADsvg
+        color="#674188"
+        className="absolute bottom-0 right-0 scale-50 translate-x-1/4 translate-y-1/4 "
+      />
 
-      <div className="w-1/3 absolute bottom-1">
-        <Scalesvg color="#674188" />
-      </div>
+      <Scalesvg color="#674188" className="w-1/4 absolute bottom-1" />
       <div className="flex items-center font-playfair relative">
         <Image
           src={LOGO}
