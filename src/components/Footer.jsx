@@ -17,9 +17,13 @@ const Footer = () => {
         <Scalesvg color="#674188" />
       </div>
       <div className="flex items-center font-playfair relative">
-        <Image src={LOGO} alt="logo" className="object-contain h-20 w-50 m-4" />
+        <Image
+          src={LOGO}
+          alt="logo"
+          className="object-contain h-20 w-50 m-4 "
+        />
         <div className="">
-          <div className=" text-white text-7xl ">ΦΑΔ</div>
+          <div className=" text-white text-sm md:text-xl lg:text-7xl ">ΦΑΔ</div>
           <div className="text-white text-sm"> Phi Alpha Delta</div>
         </div>
       </div>
