@@ -1,6 +1,6 @@
 import React from "react";
 import EventDescription from "./EventDescription";
-import Title from "./Title";
+import Title from "../Title";
 
 const Events = [
   {

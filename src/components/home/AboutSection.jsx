@@ -1,7 +1,7 @@
 import React from "react";
-import PADsvg from "./PADsvg.jsx";
-import Boxessvg from "./Boxessvg";
-import triangle from "../../public/triangle.svg";
+import PADsvg from "../svg/PADsvg.jsx";
+import Boxessvg from "../svg/Boxessvg.jsx";
+import triangle from "../../../public/triangle.svg";
 import Image from "next/image.js";
 import Link from "next/link.js";
 
@@ -31,7 +31,7 @@ const AboutSection = () => {
             className="bg-pad-purple h-8 md:h-12 flex items-center no-underline justify-start mr-10 md:mr-48 hover:scale-105 hover:cursor-pointer hover:ease-in-out hover:duration-500"
             href="/about"
           >
-            <Image src={triangle} className="h-full m-0" />
+            <Image src={triangle} className="h-full m-0" alt="triangle" />
             <p className="px-8 md:px-16 m-0 font-bold text-pad-beige text-lg md:text-3xl whitespace-nowrap">
               Learn More
             </p>
