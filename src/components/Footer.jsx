@@ -1,6 +1,6 @@
 import React from "react";
-import PADsvg from "./PADsvg.jsx";
-import Scalesvg from "./Scalesvg.jsx";
+import PADsvg from "./svg/PADsvg.jsx";
+import Scalesvg from "./svg/Scalesvg.jsx";
 import { BsDiscord } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import Image from "next/image.js";

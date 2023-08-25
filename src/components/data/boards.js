@@ -1,4 +1,5 @@
-import BoardPlaceHolder from "../../public/boardPlaceholder.png";
+import BoardPlaceHolder from "../../../public/boardPlaceholder.png";
+
 export const boardMembers = [
   {
     position: "Position Title P",

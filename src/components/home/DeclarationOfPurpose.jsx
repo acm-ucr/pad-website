@@ -1,14 +1,18 @@
 "use client";
 import React from "react";
-import Scalesvg from "./Scalesvg";
-import PAD1 from "../../public/PAD1.png";
+import Scalesvg from "../svg/Scalesvg";
+import PAD1 from "../../../public/PAD1.png";
 import Image from "next/image";
 import { Col, Row } from "react-bootstrap";
 const DeclarationOfPurpose = () => {
   return (
     <Row className="items-stretch w-full flex flex-col md:flex-row justify-between my-5 mx-0 p-0">
       <Col xs={12} md={6} className="p-0 m-0">
-        <Image src={PAD1} className="w-full h-full object-cover" />
+        <Image
+          src={PAD1}
+          className="w-full h-full object-cover"
+          alt="picture"
+        />
       </Col>
       <Col
         xs={12}

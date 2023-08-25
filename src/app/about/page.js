@@ -1,10 +1,10 @@
 "use client";
 import Title from "@/components/Title";
-import CoreValueCards from "@/components/CoreValueCards";
+import CoreValueCards from "@/components/about/CoreValueCards";
 import about from "../../../public/about.png";
 import Header from "@/components/Header";
-import PictureCarousel from "@/components/PictureCarousel";
-import Picture from "@/components/Picture";
+import PictureCarousel from "@/components/about/PictureCarousel";
+import Picture from "@/components/about/Picture";
 import PAD3 from "../../../public/PAD3.png";
 
 const AboutPage = () => {

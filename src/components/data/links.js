@@ -1,19 +1,20 @@
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 import { PiLinkBold } from "react-icons/pi";
+const iconClassnme = "text-4xl -rotate-45";
 export const Socials = [
   {
     path: "https://www.instagram.com/ucrphialphadelta/",
     title: "Instagram",
-    image: <FaInstagram className="text-6xl -rotate-45"></FaInstagram>,
+    image: <FaInstagram className={iconClassnme} />,
   },
   {
     path: "https://www.google.com/",
     title: "Tiktok",
-    image: <FaTiktok className="text-6xl -rotate-45"></FaTiktok>,
+    image: <FaTiktok className={iconClassnme} />,
   },
   {
     path: "https://www.google.com/",
     title: "Links",
-    image: <PiLinkBold className="text-6xl rotate-45"></PiLinkBold>,
+    image: <PiLinkBold className={iconClassnme} />,
   },
 ];

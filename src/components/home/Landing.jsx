@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
-import Boxessvg from "./svg/Boxessvg";
-import landing from "../../public/landing.png";
+import Boxessvg from "../svg/Boxessvg";
+import landing from "../../../public/landing.png";
 import Image from "next/image";
-import triangle from "../../public/triangle.svg";
+import triangle from "../../../public/triangle.svg";
 
 const Landing = () => {
   return (
     <div className="w-full relative flex h-[50vh] md:h-screen">
-      <Image src={landing} className="w-full" />
+      <Image src={landing} className="w-full" alt="landing" />
       <div className="absolute bg-gradient-to-r from-[#331B48]/30 to-[#331B48] w-full h-full flex items-center justify-end">
         <Boxessvg
           color="#F7EFE5"
@@ -42,7 +42,7 @@ const Landing = () => {
             href="/join"
             className="mt-3 items-center animate-fade-up animate-delay-[800ms] relative box-content w-1/2 flex bg-pad-darkpurple no-underline self-end"
           >
-            <Image src={triangle} className="h-full m-0" />
+            <Image src={triangle} className="h-full m-0" alt="triangle" />
             <p className="m-0 pl-20 py-1 md:py-2 font-source text-white text-base md:text-2xl whitespace-nowrap">
               Join Us
             </p>
