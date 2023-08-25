@@ -1,9 +1,9 @@
 import React from "react";
 import events from "../../../public/events.png";
 import Header from "@/components/Header";
-import EventDescriptions from "@/components/EventDescriptions";
+import EventDescriptions from "@/components/events/EventDescriptions";
 
-const join = () => {
+const EvnetsPage = () => {
   return (
     <div>
       <Header title="Events" src={events} />
@@ -12,4 +12,4 @@ const join = () => {
   );
 };
 
-export default join;
+export default EvnetsPage;

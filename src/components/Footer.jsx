@@ -1,6 +1,6 @@
 import React from "react";
-import PADsvg from "./PADsvg.jsx";
-import Scalesvg from "./Scalesvg.jsx";
+import PADsvg from "./svg/PADsvg.jsx";
+import Scalesvg from "./svg/Scalesvg.jsx";
 import { BsDiscord } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
 import Image from "next/image.js";
@@ -9,17 +9,20 @@ import LOGO from "../../public/LOGO.png";
 const Footer = () => {
   return (
     <div className="relative w-full bg-pad-purple h-[375px] overflow-hidden flex justify-between items-end">
-      <div className="absolute bottom-0 right-0 scale-50 translate-x-1/4 translate-y-1/4 ">
-        <PADsvg color="#674188" />
-      </div>
+      <PADsvg
+        color="#674188"
+        className="absolute bottom-0 right-0 scale-50 translate-x-1/4 translate-y-1/4 "
+      />
 
-      <div className="w-1/3 absolute bottom-1">
-        <Scalesvg color="#674188" />
-      </div>
+      <Scalesvg color="#674188" className="w-1/4 absolute bottom-1" />
       <div className="flex items-center font-playfair relative">
-        <Image src={LOGO} alt="logo" className="object-contain h-20 w-50 m-4" />
+        <Image
+          src={LOGO}
+          alt="logo"
+          className="object-contain h-20 w-50 m-4 "
+        />
         <div className="">
-          <div className=" text-white text-7xl ">ΦΑΔ</div>
+          <div className=" text-white text-sm md:text-xl lg:text-7xl ">ΦΑΔ</div>
           <div className="text-white text-sm"> Phi Alpha Delta</div>
         </div>
       </div>

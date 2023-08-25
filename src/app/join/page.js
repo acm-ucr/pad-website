@@ -1,17 +1,21 @@
-import UCRBenefits from "@/components/UCRBenefits";
+import UCRBenefits from "@/components/join/UCRBenefits";
+import NationalBenefits from "@/components/join/NationalBenefits";
 import React from "react";
 import join from "../../../public/join.png";
 import Header from "@/components/Header";
-import HowToJoin from "@/components/HowToJoin";
+import HowToJoin from "@/components/join/HowToJoin";
 
-const page = () => {
+const JoinPage = () => {
   return (
     <div className="flex flex-col items-center">
       <Header title="Join" src={join} />
-      <UCRBenefits />
+      <div className="flex flex-row">
+        <NationalBenefits />
+        <UCRBenefits />
+      </div>
       <HowToJoin />
     </div>
   );
 };
 
-export default page;
+export default JoinPage;

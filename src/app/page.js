@@ -1,7 +1,7 @@
-import Landing from "@/components/Landing";
-import AboutSection from "@/components/AboutSection";
-import CourValuesSection from "@/components/CourValuesSection";
-import DeclarationOfPurpose from "@/components/DeclarationOfPurpose";
+import Landing from "@/components/home/Landing";
+import AboutSection from "@/components/home/AboutSection";
+import CourValuesSection from "@/components/home/CourValuesSection";
+import DeclarationOfPurpose from "@/components/home/DeclarationOfPurpose";
 
 const Home = () => {
   return (

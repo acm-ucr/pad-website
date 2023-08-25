@@ -1,29 +1,14 @@
 "use client";
-
-import React from "react";
+import React, { useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import { FaBars } from "react-icons/fa";
-const items = [
-  {
-    name: "About",
-    link: "about",
-  },
-  {
-    name: "Events",
-    link: "events",
-  },
-  {
-    name: "Board",
-    link: "board",
-  },
-  {
-    name: "Contacts",
-    link: "contacts",
-  },
-];
+import { items } from "./data/navigation";
+
 const Navigation = () => {
+  const [selected, setSelected] = useState("");
+  console.log(selected);
   return (
     <Navbar
       collapseOnSelect
@@ -31,9 +16,10 @@ const Navigation = () => {
       fixed="top"
       className="w-full m-0 md:h-[8vh] p-0"
     >
-      <div className="flex px-3 py-0 font-playfair w-full m-0 !bg-black/50 min-h-full justify-between">
+      <div className="flex px-3 py-0 font-playfair w-full m-0 !bg-black/50 min-h-full justify-between items-center">
         <Navbar.Brand className="p-0">
           <Link
+            as={Link}
             eventkey="1"
             className="p-0 no-underline flex items-center gap-2"
             href="/"
@@ -48,21 +34,25 @@ const Navigation = () => {
           </Link>
         </Navbar.Brand>
         <Navbar.Collapse className="items-center md:justify-end justify-center">
-          <Nav className="mb-2 w-12/12 no-underline ml-auto text-2xl">
+          <Nav className="mb-2 w-12/12 no-underline text-2xl flex items-center">
             {items.map((item, index) => (
               <Nav.Link
+                as={Link}
                 key={index}
-                eventkey="6"
                 href={item.link}
-                className="mb-0 py-1 px-4 no-underline ml-auto !text-white text-2xl whitespace-nowrap w-full text-center !font-medium hover: hover:cursor-pointer"
+                onClick={() => {
+                  setSelected(item.name);
+                }}
+                className={`hover:cursor-pointer smb-0 py-1 px-4 no-underline !text-white text-2xl whitespace-nowrap !font-medium hover:!text-pad-lightpurple duration-300 ${
+                  selected === item.name && "!bg-white/10"
+                }`}
               >
                 {item.name}
               </Nav.Link>
             ))}
             <Nav.Link
-              eventkey="5"
               href="/join"
-              className="mt-1 pt-0 pb-1 px-3 no-underline ml-auto !text-white !bg-pad-darkpurple text-2xl whitespace-nowrap w-full text-center !font-medium hover: hover:cursor-pointer"
+              className="m-2 py-1 px-4 no-underline !text-white !bg-pad-darkpurple text-2xl whitespace-nowrap !font-medium transition-transform ease-in-out hover:scale-105 duration-300 hover:cursor-pointer"
             >
               Join
             </Nav.Link>
