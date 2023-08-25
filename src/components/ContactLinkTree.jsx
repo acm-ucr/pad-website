@@ -51,7 +51,7 @@ const ContactLinkTree = () => {
           {Socials.map((link, index) => {
             return (
               <Col key={index} xs="3" className="flex justify-center">
-                <div className="border-3 border-pad-darkpurple py-2 px-2 rotate-45 ">
+                <div className="border-3 animate-fade-up animate-delay-[600ms] scale-300 hover:duration-300 border-pad-darkpurple py-2 px-2 rotate-45 ">
                   <a
                     href={link.path}
                     rel="noreferrer"
