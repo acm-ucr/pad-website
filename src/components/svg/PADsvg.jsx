@@ -1,8 +1,9 @@
 import React from "react";
 
-const PADsvg = ({ color }) => {
+const PADsvg = ({ color, className }) => {
   return (
     <svg
+      className={className}
       width="760"
       height="272"
       viewBox="0 0 760 272"

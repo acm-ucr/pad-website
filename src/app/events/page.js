@@ -1,15 +1,15 @@
 import React from "react";
 import events from "../../../public/events.png";
 import Header from "@/components/Header";
-import EventDescription from "@/components/EventDescription";
+import EventDescriptions from "@/components/events/EventDescriptions";
 
-const join = () => {
+const EvnetsPage = () => {
   return (
     <div>
       <Header title="Events" src={events} />
-      <EventDescription />
+      <EventDescriptions />
     </div>
   );
 };
 
-export default join;
+export default EvnetsPage;

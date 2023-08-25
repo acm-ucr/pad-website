@@ -1,19 +1,15 @@
-import Board from "@/components/Board";
+import Boards from "@/components/board/Boards";
 import React from "react";
 import board from "../../../public/board.png";
 import Header from "@/components/Header";
-import Picture from "@/components/Picture";
 
-const page = () => {
+const BoardPage = () => {
   return (
-    <div>
+    <div className="w-full flex flex-col items-center">
       <Header title="Board" src={board} />
-      <div className="flex justify-center">
-        <Picture />
-      </div>
-      <Board />
+      <Boards />
     </div>
   );
 };
 
-export default page;
+export default BoardPage;

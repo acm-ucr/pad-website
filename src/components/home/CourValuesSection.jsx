@@ -2,7 +2,7 @@ import React from "react";
 import CoreValueTitle from "./CoreValueTitle";
 import CoreValues from "./CoreValues";
 import Image from "next/image";
-import PAD2 from "../../public/PAD2.png";
+import PAD2 from "../../../public/PAD2.png";
 
 const CourValuesSection = () => {
   return (
@@ -11,7 +11,7 @@ const CourValuesSection = () => {
         <div className="w-full justify-center md:justify-end flex md:mt-48">
           <CoreValues />
         </div>
-        <Image src={PAD2} className="z-10 w-4/5 md:w-1/2" />
+        <Image src={PAD2} className="z-10 w-4/5 md:w-1/2" alt="picture" />
         <CoreValueTitle
           className={
             "w-3/4 flex flex-col md:w-1/2 z-50 absolute -top-32 left-6 md:left-16"
