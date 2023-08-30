@@ -4,7 +4,7 @@ import { PiDiamondsFourBold } from "react-icons/pi";
 const HowToJoin = () => {
   return (
     <div className="w-10/12 font-playfair">
-      <p className="text-pad-purple text-2xl w-full font-bold">
+      <p className="text-pad-purple text-2xl w-full font-bold ml-40">
         Open Membership Policy
       </p>
 
@@ -21,7 +21,7 @@ const HowToJoin = () => {
         </p>
         <li className="">Chapter Fee is QUARTERLY</li>
 
-        <li className="ml-4">Pay to our Treasurers Venmo</li>
+        <li className="ml-4 mb-10">Pay to our Treasurers Venmo</li>
       </div>
     </div>
   );
