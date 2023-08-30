@@ -14,7 +14,7 @@ const AboutSection = () => {
       />
       <Boxessvg color="#E7DBDF" className="w-1/6 self-end md:mr-5 h-fit mt-2" />
       <div className="w-3/4 self-end">
-        <p className="text-xl md:text-4xl text-pad-lightpurple font-bold ml-8 my-0 md:my-2">
+        <p className="animate-fade-right animate-once text-xl md:text-4xl text-pad-lightpurple font-bold ml-8 my-0 md:my-2">
           About Us
         </p>
         <div className="text-2xl md:text-5xl font-bold border-l-8 border-pad-lightpurple py-3 pl-3">
@@ -31,7 +31,11 @@ const AboutSection = () => {
             className="bg-pad-purple h-8 md:h-12 flex items-center no-underline justify-start mr-10 md:mr-48 hover:scale-105 hover:cursor-pointer hover:ease-in-out hover:duration-500"
             href="/about"
           >
-            <Image src={triangle} className="h-full m-0" alt="triangle" />
+            <Image
+              src={triangle}
+              className="h-full m-0 w-auto"
+              alt="triangle"
+            />
             <p className="px-8 md:px-16 m-0 font-bold text-pad-beige text-lg md:text-3xl whitespace-nowrap">
               Learn More
             </p>
