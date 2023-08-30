@@ -8,7 +8,7 @@ const CourValuesSection = () => {
   return (
     <div className="w-full mt-32">
       <div className="flex items-end  flex-col-reverse relative w-full md:flex-row md:justify-end md:items-start">
-        <div className="animate-fade-down animate-delay-[400ms] w-full justify-center md:justify-end flex md:mt-48">
+        <div className="w-full justify-center md:justify-end flex md:mt-48">
           <CoreValues />
         </div>
         <Image src={PAD2} className="z-10 w-4/5 md:w-1/2" alt="picture" />

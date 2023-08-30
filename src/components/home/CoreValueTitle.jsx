@@ -13,10 +13,10 @@ const CoreValueTitle = ({ className }) => {
             <div className="h-8 w-1.5 mr-1.5 bg-pad-lightpurple"></div>
           </div>
           <div className="my-1 md:my-4 mx-4 relative">
-            <p className="animate-fade-left animate-once text-xl md:text-3xl text-pad-beige font-playfair font-bold pr-2">
+            <p className="text-xl md:text-3xl text-pad-beige font-playfair font-bold pr-2">
               Core Values
             </p>
-            <p className="animate-fade-left animate-once animate-delay-[200ms] whitespace-normal text-xs md:text-sm text-pad-beige font-playfair w-full md:w-10/12">
+            <p className="whitespace-normal text-xs md:text-sm text-pad-beige font-playfair w-full md:w-10/12">
               Bound together by tradition and our common interest in the law, we
               share these core values
             </p>
