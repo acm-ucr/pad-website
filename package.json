@@ -31,6 +31,7 @@
     "eslint-plugin-react": "^7.32.2",
     "husky": "^8.0.0",
     "prettier": "^2.8.8",
+    "tailwindcss-animate": "^1.0.6",
     "tailwindcss-animated": "^1.0.1"
   }
 }
