@@ -14,7 +14,7 @@ const AboutSection = () => {
       />
       <Boxessvg color="#E7DBDF" className="w-1/6 self-end md:mr-5 h-fit mt-2" />
       <div className="w-3/4 self-end">
-        <p className="text-xl md:text-4xl text-pad-lightpurple font-bold ml-8 my-0 md:my-2">
+        <p className="animate-fade-right animate-once text-xl md:text-4xl text-pad-lightpurple font-bold ml-8 my-0 md:my-2">
           About Us
         </p>
         <div className="text-2xl md:text-5xl font-bold border-l-8 border-pad-lightpurple py-3 pl-3">
