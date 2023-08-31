@@ -9,8 +9,9 @@ const JoinPage = () => {
   return (
     <div className="flex flex-col items-center">
       <Header title="Join" src={join} />
-      <div className="flex flex-row">
+      <div className="flex flex-row space-x-32 mt-10 mb-10">
         <NationalBenefits />
+        <div className="h-80 w-px mt-3 bg-gray-500"></div>
         <UCRBenefits />
       </div>
       <HowToJoin />
