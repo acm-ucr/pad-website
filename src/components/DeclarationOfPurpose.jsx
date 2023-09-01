@@ -19,10 +19,10 @@ const DeclarationOfPurpose = () => {
           color="#745091"
           className="absolute top-1/2 -translate-y-1/2 right-0"
         />
-        <div className="relative font-playfair py-1 text-center text-md md:text-2xl w-4/5 border-t-2 border-l-2 border-b-2 text-pad-beige border-pad-beige self-end mb-10">
+        <div className="animate-fade-up animate-delay-[600ms] relative font-playfair py-1 text-center text-md md:text-2xl w-4/5 border-t-2 border-l-2 border-b-2 text-pad-beige border-pad-beige self-end mb-10">
           DECLARATION OF PURPOSE
         </div>
-        <div className="relative font-playfair w-3/4 text-pad-beige text-md md:text-lg lg:text-xl justify-self-end self-center">
+        <div className="animate-fade-up animate-delay-[600ms] animate-once relative font-playfair w-3/4 text-pad-beige text-md md:text-lg lg:text-xl justify-self-end self-center">
           The purpose of this Fraternity shall be to form a strong bond uniting
           students and teachers of the lawwith members of the Bench and Bar in a
           fraternal fellowship designed to advance the ideals of liberty and
