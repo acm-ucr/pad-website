@@ -6,7 +6,7 @@ import { useState } from "react";
 const PictureCarousel = () => {
   const slides = [
     {
-      url: "landing.png",
+      url: "PAD5.png",
     },
     {
       url: "events.png",
