@@ -6,7 +6,7 @@ import HowToJoin from "@/components/join/HowToJoin";
 
 const JoinPage = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center w-full">
       <Header title="Join" src={join} />
       <div className="flex flex-row space-x-32 mt-10 mb-10">
         <NationalBenefits />

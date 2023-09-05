@@ -6,7 +6,7 @@ import Board from "./Board";
 const Boards = () => {
   return (
     <div className="flex justify-center">
-      <Row className="my-6 p-0 flex justify-start w-10/12">
+      <Row className="my-6 p-0 flex justify-start w-9/12">
         {boardMembers.map((member, idx) => (
           <Board member={member} key={idx} />
         ))}
