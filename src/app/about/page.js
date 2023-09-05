@@ -10,27 +10,34 @@ import landing from "../../../public/landing.png";
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center overflow-hidden">
       <Header title="About Us" src={about} />
       <CoreValueCards />
-      <div className="w-10/12 flex flex-col items-center">
+      <div className="w-10/12 flex flex-col items-center my-12">
         <Title title="Who We Are" />
-        <p className="w-9/12 font-playfair my-5">
+        <p className="textsm md:text-lg w-9/12 font-playfair my-2 md:my-5">
           We are the preeminent law fraternity promoting the bonds of
           fraternalism and we are the leader in the devolopment advancement of
           professional ideals.
         </p>
         <Picture picture={PAD3} />
+
         <Title title="Our Mission" />
-        <p className="w-9/12 font-playfair my-5">
+        <p className="textsm md:text-lg w-9/12 font-playfair my-2 md:my-5">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt
+          eiusmod tempor incididunt Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt
         </p>
         <Picture picture={PAD4} />
         <Title title="Activities and Socials" />
-        <PictureCarousel />
+        <div className="w-full md:w-2/3">
+          <PictureCarousel />
+        </div>
         <Title title="DECLARATION OF PURPOSE" />
-        <p className=" font-playfair my-5 mb-60">
+        <p className="textsm md:text-lg font-playfair my-2 md:my-5 ">
           The purpose of this Fraternity shall be to form a strong bond uniting
           students and teachers of the lawwith members of the Bench and Bar in a
           fraternal fellowship designed to advance the ideals of liberty and
