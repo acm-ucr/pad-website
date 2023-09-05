@@ -13,11 +13,17 @@ const CourValuesSection = () => {
         <div className="w-full justify-center md:justify-end flex md:mt-48">
           <CoreValues inView={inView} />
         </div>
-        <Image src={PAD2} className="z-10 w-4/5 md:w-1/2" alt="picture" />
+        <Image
+          src={PAD2}
+          className={`${
+            inView && "animate-fade-left animate-once"
+          } z-10 w-4/5 md:w-1/2`}
+          alt="picture"
+        />
         <CoreValueTitle
-          className={
-            "w-3/4 flex flex-col md:w-1/2 z-50 absolute -top-32 left-6 md:left-16"
-          }
+          className={`${
+            inView && "animate-fade-up animate-once"
+          } w-3/4 flex flex-col md:w-1/2 z-50 absolute -top-32 left-6 md:left-16`}
         />
       </div>
     </div>
