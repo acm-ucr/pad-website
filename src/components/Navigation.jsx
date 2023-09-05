@@ -8,7 +8,6 @@ import { items } from "./data/navigation";
 
 const Navigation = () => {
   const [selected, setSelected] = useState("");
-  console.log(selected);
   return (
     <Navbar
       collapseOnSelect

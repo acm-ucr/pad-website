@@ -2,9 +2,8 @@ import React from "react";
 
 const CustomEvent = ({ event }) => {
   return (
-    <div className={`font-playfair p-1 ${event.color} text-sm`}>
-      <p className="inline whitespace-nowrap">
-        &nbsp; &nbsp; &nbsp; &nbsp;
+    <div className={`font-playfair ${event.color} text-sm flex justify-start`}>
+      <p className="whitespace-nowrap m-0">
         {new Date(event.start).toLocaleTimeString(navigator.language, {
           hour: "2-digit",
           minute: "2-digit",
