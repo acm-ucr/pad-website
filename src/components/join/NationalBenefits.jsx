@@ -1,5 +1,3 @@
-import React from "react";
-
 const NationalBenefits = () => {
   return (
     <div className="flex justify-end">
@@ -10,15 +8,11 @@ const NationalBenefits = () => {
           </span>
         </div>
 
-        <div className="flex justify-center items-center right-4 bottom-[3.5px] relative ">
-          <div className="w-3 h-3 bg-pad-lightpurple transform rotate-45"></div>
-        </div>
-
-        <ul className="mt-0">
-          <li className="indent-0 text-black font-playfair text-xl list-disc">
+        <ul className="mt-3">
+          <li className="indent-0 text-black font-playfair text-sm md:text-lg list-disc">
             National Directory
             <ol>
-              <li className="list-disc text-black font-playfair text-xl whitespace-pre-line">
+              <li className="list-disc text-black font-playfair text-sm md:text-lg whitespace-pre-line">
                 List of every Phi Alpha Delta
                 <p>member</p>
               </li>
@@ -26,11 +20,11 @@ const NationalBenefits = () => {
           </li>
         </ul>
         <ul className="-mt-4">
-          <li className="text-black font-playfair text-xl list-disc">
+          <li className="text-black font-playfair text-sm md:text-lg list-disc">
             Exclusive discounts through
             <div>partners</div>
             <ol>
-              <li className=" list-disc text-black font-playfair text-xl">
+              <li className=" list-disc text-black font-playfair text-sm md:text-lg">
                 Office Depot, Test Prep
                 <p>Courses, etc.</p>
               </li>
@@ -38,9 +32,13 @@ const NationalBenefits = () => {
           </li>
         </ul>
         <ul className="-mt-4 list-disc">
-          <li className="text-black font-playfair text-xl">Scholarships</li>
-          <li className="text-black font-playfair text-xl">Internships</li>
-          <li className="text-black font-playfair text-xl">
+          <li className="text-black font-playfair text-sm md:text-lg">
+            Scholarships
+          </li>
+          <li className="text-black font-playfair text-sm md:text-lg">
+            Internships
+          </li>
+          <li className="text-black font-playfair text-sm md:text-lg">
             Law School Transition
             <p>Resources</p>
           </li>

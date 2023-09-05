@@ -1,12 +1,17 @@
 "use client";
-import React from "react";
 import Scalesvg from "../svg/Scalesvg";
 import PAD1 from "../../../public/PAD1.png";
 import Image from "next/image";
-import { Col, Row } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import useView from "../useView.jsx";
 const DeclarationOfPurpose = () => {
+  const [inView, ref] = useView();
   return (
-    <Row className="items-stretch w-full flex flex-col md:flex-row justify-between my-5 mx-0 p-0">
+    <Row
+      className="items-stretch w-full flex flex-col md:flex-row justify-between my-5 mx-0 p-0"
+      ref={ref}
+    >
       <Col xs={12} md={6} className="p-0 m-0">
         <Image
           src={PAD1}
@@ -23,10 +28,18 @@ const DeclarationOfPurpose = () => {
           color="#745091"
           className="absolute top-1/2 -translate-y-1/2 right-0"
         />
-        <div className="relative font-playfair py-1 text-center text-md md:text-2xl w-4/5 border-t-2 border-l-2 border-b-2 text-pad-beige border-pad-beige self-end mb-10">
+        <div
+          className={`${
+            inView && "animate-fade-left animate-once"
+          } relative font-playfair py-1 text-center text-md md:text-2xl w-4/5 border-t-2 border-l-2 border-b-2 text-pad-beige border-pad-beige self-end mb-10`}
+        >
           DECLARATION OF PURPOSE
         </div>
-        <div className="relative font-playfair w-3/4 text-pad-beige text-md md:text-lg lg:text-xl justify-self-end self-center">
+        <div
+          className={`${
+            inView && "animate-fade-right animate-once"
+          } relative font-playfair w-3/4 text-pad-beige text-md md:text-lg lg:text-xl justify-self-end self-center`}
+        >
           The purpose of this Fraternity shall be to form a strong bond uniting
           students and teachers of the lawwith members of the Bench and Bar in a
           fraternal fellowship designed to advance the ideals of liberty and

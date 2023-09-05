@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import CoreValueTitle from "./CoreValueTitle";
 import CoreValues from "./CoreValues";
 import Image from "next/image";
@@ -16,9 +15,8 @@ const CourValuesSection = () => {
         </div>
         <Image src={PAD2} className="z-10 w-4/5 md:w-1/2" alt="picture" />
         <CoreValueTitle
-          className={
-            "w-3/4 flex flex-col md:w-1/2 z-50 absolute -top-32 left-6 md:left-16"
-          }
+          inView={inView}
+          className="w-3/4 flex flex-col md:w-1/2 z-50 absolute -top-32 left-6 md:left-16"
         />
       </div>
     </div>

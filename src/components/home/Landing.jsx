@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import Boxessvg from "../svg/Boxessvg";
 import landing from "../../../public/landing.png";
@@ -47,7 +46,7 @@ const Landing = () => {
               className="h-full w-auto m-0"
               alt="triangle"
             />
-            <p className="m-0 pl-6 md:pl-20 py-1 md:py-2 font-source text-white text-base md:text-2xl whitespace-nowrap">
+            <p className="m-0 pl-6 md:pl-20 py-1 md:py-2 font-source text-white text-base md:text-2xl whitespace-nowrap no-underline hover:scale-110 duration-300">
               Join Us
             </p>
           </Link>

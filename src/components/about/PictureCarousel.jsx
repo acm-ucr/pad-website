@@ -1,27 +1,36 @@
+"use client";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { RxDotFilled } from "react-icons/rx";
-import React from "react";
 import { useState } from "react";
+import Image from "next/image";
+import PAD5 from "../../../public/PAD5.png";
+import events from "../../../public/events.png";
+import about from "../../../public/about.png";
+import join from "../../../public/join.png";
 
 const PictureCarousel = () => {
   const slides = [
     {
-      url: "PAD5.png",
+      description: "Phi Alpha Delta Retreat 2022",
+      src: PAD5,
     },
     {
-      url: "events.png",
+      description: "Hello World",
+      src: events,
     },
     {
-      url: "about.png",
+      description: "Meow",
+      src: about,
     },
     {
-      url: "join.png",
+      description: "Wow",
+      src: join,
     },
   ];
   const [currentIdx, setCurrentIdx] = useState(0);
 
   const prevSlide = () => {
-    const isFirstSlide = currentIndex === 0;
+    const isFirstSlide = currentIdx === 0;
     const newIdx = isFirstSlide ? slides.length - 1 : currentIdx - 1;
     setCurrentIdx(newIdx);
   };
@@ -37,40 +46,43 @@ const PictureCarousel = () => {
   };
 
   return (
-    <div className="h-[85vh]">
-      <div>
-        <div className="max-w-[800px] h-[480px] w-full m-auto relative group">
-          <p className=" mb-1 font-playfair text-pad-black text-2xl">
-            Phi Alpha Delta Retreat 2022
+    <div className="h-[300px] md:h-[480px] w-full m-auto group flex-col flex items-center justify-center">
+      <div className="h-full items-center justify-center flex">
+        <AiOutlineArrowLeft
+          onClick={prevSlide}
+          size={70}
+          className="text-pad-purple cursor-pointer text-xl"
+        />
+        <div className="flex flex-col items-center justify-center">
+          <p className="m-0 font-playfair text-pad-black text-base md:text-2xl">
+            {slides[currentIdx].description}
           </p>
-          <div
-            style={{ backgroundImage: `url(${slides[currentIdx].url})` }}
-            className="w-full h-full bg-center bg-cover duration-500"
-          ></div>
-          {/* Left Arrow */}
-          <div className=" absolute top-[50%] -translate-x-52 translate-y-[-50%] left-5  text-pad-purple cursor-pointer">
-            <AiOutlineArrowLeft onClick={prevSlide} size={70} />
-          </div>
-          {/* Right Arrow */}
-          <div className="absolute top-[50%] translate-x-52 translate-y-[-50%] right-5  text-pad-purple cursor-pointer">
-            <AiOutlineArrowRight onClick={nextSlide} size={70} />
-          </div>
-          <div className="flex top-4 justify-center py-2">
-            {slides.map((slide, slideIdx) => (
-              <div
-                key={slideIdx}
-                onClick={() => goToSlide(slideIdx)}
-                className={
-                  currentIdx === slideIdx
-                    ? "text-4xl cursor-pointer text-white"
-                    : "text-pad-lightpurple cursor-pointer text-4xl"
-                }
-              >
-                <RxDotFilled />
-              </div>
-            ))}
-          </div>
+          <Image
+            src={slides[currentIdx].src}
+            className="w-10/12 duration-300"
+          />
         </div>
+
+        <AiOutlineArrowRight
+          onClick={nextSlide}
+          size={70}
+          className="text-pad-purple cursor-pointer text-xl"
+        />
+      </div>
+      <div className="flex top-4 justify-center py-2">
+        {slides.map((slide, slideIdx) => (
+          <div
+            key={slideIdx}
+            onClick={() => goToSlide(slideIdx)}
+            className={
+              currentIdx === slideIdx
+                ? "text-4xl cursor-pointer text-white"
+                : "text-pad-lightpurple cursor-pointer text-4xl"
+            }
+          >
+            <RxDotFilled />
+          </div>
+        ))}
       </div>
     </div>
   );

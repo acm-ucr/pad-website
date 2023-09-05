@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const Modal = ({ event, setState }) => {
