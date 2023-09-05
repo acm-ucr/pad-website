@@ -8,15 +8,11 @@ const UCRBenefits = () => {
           </span>
         </div>
 
-        <div className="flex justify-center items-center left-4 bottom-[3.5px] relative ">
-          <div className="w-3 h-3 bg-pad-lightpurple transform rotate-45"></div>
-        </div>
-
-        <ul className="mt-0">
-          <li className="indent-0 text-black font-playfair text-xl list-disc">
+        <ul className="mt-3">
+          <li className="indent-0 text-black font-playfair text-sm md:text-lg list-disc">
             PartnerShips
             <ol>
-              <li className="list-disc text-black font-playfair text-xl whitespace-pre-line">
+              <li className="list-disc text-black font-playfair text-sm md:text-lg whitespace-pre-line">
                 ScoreitUp. Mark Sacks,
                 <p>Apollo</p>
               </li>
@@ -24,32 +20,34 @@ const UCRBenefits = () => {
           </li>
         </ul>
         <ul className="-mt-4">
-          <li className="text-black font-playfair text-xl list-disc">
+          <li className="text-black font-playfair text-sm md:text-lg list-disc">
             Workshops
             <ol>
-              <li className=" list-disc text-black font-playfair text-xl">
+              <li className=" list-disc text-black font-playfair text-sm md:text-lg">
                 How to get into Law School
               </li>
-              <li className=" list-disc text-black font-playfair text-xl">
+              <li className=" list-disc text-black font-playfair text-sm md:text-lg">
                 Personal Statments
               </li>
-              <li className=" list-disc text-black font-playfair text-xl">
+              <li className=" list-disc text-black font-playfair text-sm md:text-lg">
                 Resume Building
               </li>
-              <li className="list-disc text-black font-playfair text-xl">
+              <li className="list-disc text-black font-playfair text-sm md:text-lg">
                 Access to helpful Alumni
               </li>
             </ol>
           </li>
         </ul>
         <ul className="-mt-4 list-disc">
-          <li className="text-black font-playfair text-xl">
+          <li className="text-black font-playfair text-sm md:text-lg">
             LSAT Study Groups
           </li>
-          <li className="text-black font-playfair text-xl">
+          <li className="text-black font-playfair text-sm md:text-lg">
             Mentor/Mentee Program
           </li>
-          <li className="text-black font-playfair text-xl">Lawyer Banquet</li>
+          <li className="text-black font-playfair text-sm md:text-lg">
+            Lawyer Banquet
+          </li>
         </ul>
       </div>
     </div>
