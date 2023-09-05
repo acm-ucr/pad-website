@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = ({ src, title }) => {
   return (
-    <div className="relative w-full h-[60vh] overflow-clip">
+    <div className="relative w-full h-[60vh] overflow-clip z-10">
       <Image
         src={src}
         alt="header img"

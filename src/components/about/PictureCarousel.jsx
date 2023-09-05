@@ -1,3 +1,4 @@
+"use client";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { RxDotFilled } from "react-icons/rx";
 import React from "react";

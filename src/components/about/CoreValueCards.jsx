@@ -23,13 +23,15 @@ const coreValues = [
 ];
 const CoreValueCards = () => {
   return (
-    <Row className="w-10/12 -mt-12 flex justify-center">
-      {coreValues.map((coreValue, index) => (
-        <Col className="p-0 group border-0" key={index} xs={3} md>
-          <CoreValueCard icon={coreValue.icon} text={coreValue.text} />
-        </Col>
-      ))}
-    </Row>
+    <div className="w-10/12 -mt-16 flex justify-center z-50">
+      <Row className="w-full">
+        {coreValues.map((coreValue, index) => (
+          <Col className="p-0 group border-0" key={index} xs={3} md>
+            <CoreValueCard icon={coreValue.icon} text={coreValue.text} />
+          </Col>
+        ))}
+      </Row>
+    </div>
   );
 };
 
