@@ -23,7 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${playfair.variable} ${source.variable}`}>
-      <body className=" bg-pad-beige">
+      <body className=" bg-pad-beige flex items-center justify-center flex-col">
         <Navigation />
         {children}
         <Footer />

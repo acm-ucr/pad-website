@@ -1,15 +1,18 @@
-import React from "react";
 import contacts from "../../../public/contacts.png";
 import Header from "@/components/Header";
-import ContactLinkTree from "@/components/ContactLinkTree";
+import ContactLinkTree from "@/components/contact/ContactLinkTree";
+import ContactSendEmail from "@/components/contact/ContactSendEmail";
 
-const page = () => {
+const ContactsPage = () => {
   return (
-    <div>
+    <div className="w-full flex flex-col items-center">
       <Header title="Contacts" src={contacts} />
-      <ContactLinkTree />
+      <div className="flex flex-row -translate-y-32 h-[70vh] w-2/3 items-center justify-center z-50">
+        <ContactLinkTree />
+        <ContactSendEmail />
+      </div>
     </div>
   );
 };
 
-export default page;
+export default ContactsPage;

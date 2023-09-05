@@ -1,15 +1,12 @@
-import React from "react";
-
 const Title = ({ title }) => {
   return (
-    <div className=" h-48 w-full">
-      <div className="relative top-24">
-        <div className="text-pad-textshadow font-bold font-playfair text-5xl md:text-7xl relative left-8">
-          {title}
-        </div>
-        <div className="text-black font-bold font-playfair text-xl md:text-3xl absolute left-20 top-6 md:top-12 underline underline-offset-8 decoration-pad-darkpurple">
-          {title}
-        </div>
+    <div className="relative w-full mt-14">
+      <div className="absolute text-pad-textshadow text-5xl md:text-7xl font-bold font-playfair -left-8 bottom-3 whitespace-nowrap">
+        {title}
+      </div>
+      <div className="text-black font-bold font-playfair text-xl md:text-3xl relative">
+        {title}
+        <div className="h-1 w-8 bg-pad-purple" />
       </div>
     </div>
   );

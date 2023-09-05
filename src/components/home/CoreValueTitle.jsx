@@ -1,6 +1,4 @@
-import React from "react";
-
-const CoreValueTitle = ({ className }) => {
+const CoreValueTitle = ({ className, inView }) => {
   return (
     <div className={className}>
       <div className="w-full relative">
@@ -12,11 +10,15 @@ const CoreValueTitle = ({ className }) => {
             <div className="h-full md:h-20 w-1.5 mr-1.5 bg-pad-lightpurple"></div>
             <div className="h-8 w-1.5 mr-1.5 bg-pad-lightpurple"></div>
           </div>
-          <div className="my-1 md:my-4 mx-4 relative">
-            <p className="text-xl md:text-3xl text-pad-beige font-playfair font-bold pr-2">
+          <div
+            className={`${
+              inView && "animate-fade-up animate-once"
+            } my-1 md:my-4 mx-4 relative`}
+          >
+            <p className="animate-fade-left animate-once text-xl md:text-3xl text-pad-beige font-playfair font-bold pr-2">
               Core Values
             </p>
-            <p className="whitespace-normal text-xs md:text-sm text-pad-beige font-playfair w-full md:w-10/12">
+            <p className="animate-fade-left animate-once animate-delay-[200ms] whitespace-normal text-xs md:text-sm text-pad-beige font-playfair w-full md:w-10/12">
               Bound together by tradition and our common interest in the law, we
               share these core values
             </p>
