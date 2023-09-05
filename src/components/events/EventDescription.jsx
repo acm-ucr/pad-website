@@ -1,5 +1,3 @@
-import React from "react";
-
 const EventDescription = ({ event }) => {
   return (
     <div className="w-full flex-col flex my-5">

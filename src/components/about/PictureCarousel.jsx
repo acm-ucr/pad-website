@@ -1,7 +1,6 @@
 "use client";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { RxDotFilled } from "react-icons/rx";
-import React from "react";
 import { useState } from "react";
 import Image from "next/image";
 import PAD5 from "../../../public/PAD5.png";

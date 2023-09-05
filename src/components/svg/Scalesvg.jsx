@@ -1,9 +1,8 @@
-import React from "react";
-
 const Scalesvg = ({ color, className }) => {
   return (
     <div className={className}>
       <svg
+        className="w-full h-full"
         width="502"
         height="546"
         viewBox="0 0 502 546"

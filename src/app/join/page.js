@@ -1,6 +1,5 @@
 import UCRBenefits from "@/components/join/UCRBenefits";
 import NationalBenefits from "@/components/join/NationalBenefits";
-import React from "react";
 import join from "../../../public/join.png";
 import Header from "@/components/Header";
 import HowToJoin from "@/components/join/HowToJoin";

@@ -1,5 +1,3 @@
-import React from "react";
-
 const CoreValueTitle = ({ className }) => {
   return (
     <div className={className}>

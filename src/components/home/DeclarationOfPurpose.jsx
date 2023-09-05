@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
 import Scalesvg from "../svg/Scalesvg";
 import PAD1 from "../../../public/PAD1.png";
 import Image from "next/image";
-import { Col, Row } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 const DeclarationOfPurpose = () => {
   return (
     <Row className="items-stretch w-full flex flex-col md:flex-row justify-between my-5 mx-0 p-0">

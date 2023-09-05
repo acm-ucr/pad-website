@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import { Row } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
 import { boardMembers } from "../data/boards";
 import Board from "./Board";
 

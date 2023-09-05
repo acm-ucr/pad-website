@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import PADsvg from "../svg/PADsvg.jsx";
 import Boxessvg from "../svg/Boxessvg.jsx";
 import triangle from "../../../public/triangle.svg";

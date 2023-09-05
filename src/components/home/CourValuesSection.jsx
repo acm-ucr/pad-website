@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import CoreValueTitle from "./CoreValueTitle";
 import CoreValues from "./CoreValues";
 import Image from "next/image";

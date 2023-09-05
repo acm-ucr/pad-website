@@ -1,5 +1,3 @@
-import React from "react";
-
 const UCRBenefits = () => {
   return (
     <div className="flex justify-end">

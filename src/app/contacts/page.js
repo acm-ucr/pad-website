@@ -1,4 +1,3 @@
-import React from "react";
 import contacts from "../../../public/contacts.png";
 import Header from "@/components/Header";
 import ContactLinkTree from "@/components/contact/ContactLinkTree";

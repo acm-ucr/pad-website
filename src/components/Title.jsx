@@ -1,5 +1,3 @@
-import React from "react";
-
 const Title = ({ title }) => {
   return (
     <div className="relative w-full mt-14">

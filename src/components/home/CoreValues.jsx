@@ -1,4 +1,3 @@
-import React from "react";
 import { PiDiamondsFourBold } from "react-icons/pi";
 import useView from "../useView";
 

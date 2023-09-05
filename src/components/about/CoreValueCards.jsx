@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { FaBlackTie } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa";
 import { FaHandHoldingHeart } from "react-icons/fa";
@@ -7,7 +6,8 @@ import { FaLightbulb } from "react-icons/fa";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { FaSymfony } from "react-icons/fa";
 import { FaInvision } from "react-icons/fa";
-import { Row, Col } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import CoreValueCard from "./CoreValueCard";
 
 const iconStyle = "text-2xl md:text-4xl text-pad-beige";

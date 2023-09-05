@@ -1,6 +1,4 @@
-"use client";
-import React from "react";
-import { Col } from "react-bootstrap";
+import Col from "react-bootstrap/Col";
 import Image from "next/image";
 
 const Board = ({ member }) => {

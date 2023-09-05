@@ -1,5 +1,3 @@
-import React from "react";
-
 const CoreValueCard = ({ icon, text }) => {
   return (
     <div className="aspect-[3/5] group-even:bg-pad-purple group-odd:bg-pad-darkpurple flex flex-col items-center w-full justify-center">

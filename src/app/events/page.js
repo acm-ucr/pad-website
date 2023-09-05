@@ -1,4 +1,3 @@
-import React from "react";
 import events from "../../../public/events.png";
 import Header from "@/components/Header";
 import EventDescriptions from "@/components/events/EventDescriptions";

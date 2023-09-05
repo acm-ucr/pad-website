@@ -1,5 +1,4 @@
 import Boards from "@/components/board/Boards";
-import React from "react";
 import board from "../../../public/board.png";
 import Header from "@/components/Header";
 

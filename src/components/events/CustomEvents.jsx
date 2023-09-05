@@ -1,5 +1,3 @@
-import React from "react";
-
 const CustomEvent = ({ event }) => {
   return (
     <div className={`font-playfair ${event.color} text-sm flex justify-start`}>

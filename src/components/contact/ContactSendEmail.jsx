@@ -1,4 +1,3 @@
-import React from "react";
 import Boxessvg from "../svg/Boxessvg";
 
 const ContactSendEmail = () => {
