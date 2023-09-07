@@ -42,7 +42,7 @@ const Navigation = () => {
                 onClick={() => {
                   setSelected(item.name);
                 }}
-                className={`hover:cursor-pointer smb-0 py-1 px-4 no-underline !text-white text-2xl whitespace-nowrap !font-medium hover:!text-pad-lightpurple duration-300 ${
+                className={`hover:cursor-pointer mb-0 py-1 px-4 no-underline !text-white text-2xl whitespace-nowrap !font-medium hover:!text-pad-lightpurple duration-300 ${
                   selected === item.name && "!bg-white/10"
                 }`}
               >
@@ -51,7 +51,7 @@ const Navigation = () => {
             ))}
             <Nav.Link
               href="/join"
-              className="m-2 py-1 px-4 no-underline !text-white !bg-pad-darkpurple text-2xl whitespace-nowrap !font-medium transition-transform ease-in-out hover:scale-105 duration-300 hover:cursor-pointer"
+              className="m-2 py-1 px-4 no-underline !text-white !bg-pad-darkpurple text-2xl whitespace-nowrap !font-medium hover:!bg-pad-purple duration-300"
             >
               Join
             </Nav.Link>
