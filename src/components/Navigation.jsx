@@ -15,7 +15,7 @@ const Navigation = () => {
       fixed="top"
       className="w-full m-0 md:h-[8vh] p-0"
     >
-      <div className="flex px-3 py-0 font-playfair w-full m-0 !bg-black/50 min-h-full justify-between items-center">
+      <div className="flex px-3 py-0 font-playfair w-full m-0 !bg-black/50 min-h-full justify-between items-center backdrop-blur-md">
         <Navbar.Brand className="p-0">
           <Link
             as={Link}
