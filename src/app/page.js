@@ -5,12 +5,12 @@ import DeclarationOfPurpose from "@/components/home/DeclarationOfPurpose";
 
 const Home = () => {
   return (
-    <div className="w-full flex flex-col min-h-screen overflow-hidden">
+    <>
       <Landing />
       <AboutSection />
       <CourValuesSection />
       <DeclarationOfPurpose />
-    </div>
+    </>
   );
 };
 

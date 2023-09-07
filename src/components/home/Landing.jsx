@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Boxessvg from "../svg/Boxessvg";
-import landing from "../../../public/landing.png";
+import landing from "../../../public/headers/landing.png";
 import Image from "next/image";
 import triangle from "../../../public/triangle.svg";
 

@@ -1,16 +1,16 @@
 import Title from "@/components/Title";
 import CoreValueCards from "@/components/about/CoreValueCards";
-import about from "../../../public/about.png";
+import about from "../../../public/headers/about.png";
 import Header from "@/components/Header";
 import Picture from "@/components/about/Picture";
-import PAD3 from "../../../public/PAD3.png";
-import PAD4 from "../../../public/PAD4.png";
+import PAD3 from "../../../public/images/PAD3.png";
+import PAD4 from "../../../public/images/PAD4.png";
 import PictureCarousel from "@/components/about/PictureCarousel";
-import landing from "../../../public/landing.png";
+import landing from "../../../public/headers/landing.png";
 
 const AboutPage = () => {
   return (
-    <div className="flex flex-col items-center overflow-hidden">
+    <>
       <Header title="About Us" src={about} />
       <CoreValueCards />
       <div className="w-10/12 flex flex-col items-center my-12">
@@ -26,7 +26,6 @@ const AboutPage = () => {
           understanding of professional fraternalism among its members.
         </p>
         <Picture picture={PAD3} />
-
         <Title title="Our Mission" />
         <p className="textsm md:text-lg w-11/12 md:w-9/12 font-playfair my-2 md:my-5">
           Our main events strive to promote the ideals of brotherhood in
@@ -70,7 +69,7 @@ const AboutPage = () => {
         </p>
         <Picture picture={landing} />
       </div>
-    </div>
+    </>
   );
 };
 
