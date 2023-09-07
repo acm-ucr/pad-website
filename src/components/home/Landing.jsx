@@ -26,7 +26,7 @@ const Landing = () => {
           className="absolute -bottom-14 md:bottom-5 right-2 md:right-5 rotate-90 w-1/12"
         />
         <div className="flex flex-col w-3/4 lg:w-1/2">
-          <p className="animate-fade-up animate-delay-[100ms] animate-once my-3 md:my-8 font-playfair font-bold text-white text-3xl md:text-6xl underline decoration-[3px] underline-offset-[15px] self-start">
+          <p className="animate-fade-up animate-delay-[100ms] animate-once my-3 md:my-8 font-playfair font-bold text-white text-2xl md:text-5xl underline decoration-[3px] underline-offset-[15px] self-start">
             Phi Alpha Delta
           </p>
           <p className="animate-fade-up animate-delay-[300ms] animate-once  font-playfair text-white text-base md:text-3xl self-end pr-4 md:pr-8 my-1">
