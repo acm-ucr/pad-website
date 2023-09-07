@@ -35,7 +35,7 @@ const ContactLinkTree = () => {
                   title={link.title}
                   className="text-pad-purple hover:text-pad-lightpurple no-underline duration-300"
                 >
-                  {link.image}
+                  <div className="text-4xl -rotate-45">{link.image}</div>
                 </a>
               </div>
             </Col>

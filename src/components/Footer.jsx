@@ -1,9 +1,9 @@
 import PADsvg from "./svg/PADsvg.jsx";
 import Scalesvg from "./svg/Scalesvg.jsx";
-import { BsDiscord } from "react-icons/bs";
-import { GrMail } from "react-icons/gr";
 import Image from "next/image.js";
 import LOGO from "../../public/LOGO.png";
+import Link from "next/link.js";
+import { Socials } from "./data/links.js";
 
 const Footer = () => {
   return (
@@ -40,8 +40,15 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col relative items-end">
-          <BsDiscord className="md:text-4xl text-white font-semibold" />
-          <GrMail className=" md:text-4xl text-white font-semibold" />
+          {Socials.map((social, index) => (
+            <Link
+              key={index}
+              href={social.path}
+              className="text-4xl text-white hover:scale-110 duration-300 m-1"
+            >
+              {social.image}
+            </Link>
+          ))}
         </div>
       </div>
     </div>
