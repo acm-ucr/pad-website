@@ -2,7 +2,7 @@
 import CoreValueTitle from "./CoreValueTitle";
 import CoreValues from "./CoreValues";
 import Image from "next/image";
-import PAD2 from "../../../public/PAD2.png";
+import PAD2 from "../../../public/images/PAD2.png";
 import useView from "../useView.jsx";
 
 const CourValuesSection = () => {
