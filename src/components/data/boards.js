@@ -1,4 +1,4 @@
-import BoardPlaceHolder from "../../../public/boardPlaceholder.png";
+import BoardPlaceHolder from "../../../public/boards/boardPlaceholder.png";
 
 export const boardMembers = [
   {

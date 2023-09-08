@@ -5,7 +5,7 @@ import Board from "./Board";
 
 const Boards = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center animate-fade-up animate-delay-[300ms] animate-once">
       <Row className="my-6 p-0 flex justify-start w-9/12">
         {boardMembers.map((member, idx) => (
           <Board member={member} key={idx} />

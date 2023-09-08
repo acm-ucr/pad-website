@@ -3,10 +3,10 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { RxDotFilled } from "react-icons/rx";
 import { useState } from "react";
 import Image from "next/image";
-import PAD5 from "../../../public/PAD5.png";
-import events from "../../../public/events.png";
-import about from "../../../public/about.png";
-import join from "../../../public/join.png";
+import PAD5 from "../../../public/images/PAD5.png";
+import PAD1 from "../../../public/images/PAD1.png";
+import PAD2 from "../../../public/images/PAD2.png";
+import PAD3 from "../../../public/images/PAD3.png";
 
 const PictureCarousel = () => {
   const slides = [
@@ -16,15 +16,15 @@ const PictureCarousel = () => {
     },
     {
       description: "Hello World",
-      src: events,
+      src: PAD1,
     },
     {
       description: "Meow",
-      src: about,
+      src: PAD2,
     },
     {
       description: "Wow",
-      src: join,
+      src: PAD3,
     },
   ];
   const [currentIdx, setCurrentIdx] = useState(0);

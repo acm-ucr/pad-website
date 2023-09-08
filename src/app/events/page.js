@@ -4,7 +4,7 @@ import EventDescriptions from "@/components/events/EventDescriptions";
 import CalendarEvent from "@/components/events/Calendar";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import event from "../../../public/events.png";
+import event from "../../../public/headers/events.png";
 
 const EvnetsPage = () => {
   const [events, setEvents] = useState([]);
@@ -29,13 +29,13 @@ const EvnetsPage = () => {
       });
   }, []);
   return (
-    <div className="w-full flex flex-col items-center justify-center">
+    <>
       <Header title="Events" src={event} />
       <div className="w-10/12">
         <CalendarEvent events={events} />
         <EventDescriptions events={events} />
       </div>
-    </div>
+    </>
   );
 };
 
