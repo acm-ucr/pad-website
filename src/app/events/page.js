@@ -13,7 +13,7 @@ const EvnetsPage = () => {
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_CALENDAR_ID}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=starttime`
       )
-      .then((result) => {
+      .then((result) =>
         setEvents(
           result.data.items.map((event) => ({
             ...event,
@@ -25,8 +25,8 @@ const EvnetsPage = () => {
               ? "bg-pad-purple text-white"
               : "bg-pad-lightpurple text-black",
           }))
-        );
-      });
+        )
+      );
   }, []);
   return (
     <>

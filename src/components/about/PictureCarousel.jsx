@@ -3,30 +3,9 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { RxDotFilled } from "react-icons/rx";
 import { useState } from "react";
 import Image from "next/image";
-import PAD5 from "../../../public/images/PAD5.png";
-import PAD1 from "../../../public/images/PAD1.png";
-import PAD2 from "../../../public/images/PAD2.png";
-import PAD3 from "../../../public/images/PAD3.png";
+import { slides } from "@/data/pictures";
 
 const PictureCarousel = () => {
-  const slides = [
-    {
-      description: "Phi Alpha Delta Retreat 2022",
-      src: PAD5,
-    },
-    {
-      description: "Hello World",
-      src: PAD1,
-    },
-    {
-      description: "Meow",
-      src: PAD2,
-    },
-    {
-      description: "Wow",
-      src: PAD3,
-    },
-  ];
   const [currentIdx, setCurrentIdx] = useState(0);
 
   const prevSlide = () => {
@@ -46,7 +25,7 @@ const PictureCarousel = () => {
   };
 
   return (
-    <div className="h-[300px] md:h-[480px] w-full m-auto group flex-col flex items-center justify-center">
+    <div className="h-[300px] md:h-[480px] w-full m-auto group flex-col flex items-center justify-cente md:w-2/3r">
       <div className="h-full items-center justify-center flex">
         <AiOutlineArrowLeft
           onClick={prevSlide}

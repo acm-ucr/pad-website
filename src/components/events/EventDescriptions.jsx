@@ -6,9 +6,9 @@ const EventDescriptions = ({ events }) => {
     <div className="w-full flex-col flex">
       <Title title="Upcoming Events" />
       <div className="self-center w-9/12">
-        {events.map((event, index) => {
-          return <EventDescription key={index} event={event} />;
-        })}
+        {events.map((event, index) => (
+          <EventDescription key={index} event={event} />
+        ))}
       </div>
     </div>
   );

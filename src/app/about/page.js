@@ -52,9 +52,7 @@ const AboutPage = () => {
         </p>
         <Picture picture={PAD4} />
         <Title title="Activities and Socials" />
-        <div className="w-full md:w-2/3">
-          <PictureCarousel />
-        </div>
+        <PictureCarousel />
         <Title title="DECLARATION OF PURPOSE" />
         <p className="text-sm md:text-lg font-playfair my-2 md:my-5 w-11/12 md:w-9/12">
           The purpose of this Fraternity shall be to form a strong bond uniting

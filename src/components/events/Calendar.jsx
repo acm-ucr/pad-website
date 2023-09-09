@@ -10,7 +10,7 @@ import Modal from "./Modal.jsx";
 const localizer = momentLocalizer(moment);
 
 const CalendarEvent = ({ events }) => {
-  const [modalEvent, setModalEvent] = useState(null);
+  const [event, setevent] = useState(null);
 
   return (
     <section className="w-full flex justify-center items-center flex-col mt-[2vh] text-xl">
@@ -31,17 +31,15 @@ const CalendarEvent = ({ events }) => {
                 className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
               };
             }}
-            onSelectEvent={(event) => {
-              setModalEvent(event);
-            }}
+            onSelectEvent={(event) => setevent(event)}
             dayPropGetter={(event) => {
-              const bg =
-                new Date(event).toLocaleDateString() ==
-                new Date().toLocaleDateString()
-                  ? "!bg-opacity-40 !bg-pad-textshadow"
-                  : "!bg-transparent";
               return {
-                className: `${bg}`,
+                className: `${
+                  new Date(event).toLocaleDateString() ==
+                  new Date().toLocaleDateString()
+                    ? "!bg-opacity-40 !bg-pad-textshadow"
+                    : "!bg-transparent"
+                }`,
                 style: {
                   margin: 0,
                   padding: 0,
@@ -50,7 +48,7 @@ const CalendarEvent = ({ events }) => {
             }}
           />
         </div>
-        <Modal event={modalEvent} setState={setModalEvent} />
+        {event && <Modal event={event} setEvent={setEvent} />}
       </div>
     </section>
   );
