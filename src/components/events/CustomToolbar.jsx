@@ -1,6 +1,6 @@
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import filters from "./Filters.jsx";
+import filters from "@/data/filters";
 const monthNames = [
   "January",
   "February",
@@ -22,15 +22,16 @@ const CustomToolbar = (event) => {
         <p className="m-0">{monthNames[event.date.getMonth()]}</p>
         <p className="m-0">{event.date.getFullYear()}</p>
       </div>
-      <Row className="w-2/3 m-0 p-0 flex justify-end gap-3 justify-items-center items-center ">
+      <Row className="w-2/3 m-0 p-0 flex justify-end gap-3 justify-items-center items-center">
         {filters.map((filter, index) => {
           return (
-            <Col key={index} xs={5} md={3} className="m-0 p-0">
-              <div
-                className={`w-full ${filter.color} whitespace-nowrap p-1 text-center text-sm md:text-lg rounded-sm flex justify-center`}
-              >
-                {filter.topic}
-              </div>
+            <Col
+              key={index}
+              xs={5}
+              md={3}
+              className={`w-full ${filter.color} whitespace-nowrap p-1 text-center text-sm md:text-lg rounded-sm flex justify-center p-0 m-0`}
+            >
+              {filter.topic}
             </Col>
           );
         })}

@@ -10,7 +10,7 @@ const EventDescription = ({ event }) => {
       </div>
 
       <div className="flex flex-row font-playfair text-pad-lightpurple text-base">
-        <p className="m-0 ">{event.start.toLocaleDateString()}</p>
+        <p className="m-0">{event.start.toLocaleDateString()}</p>
         <p className="m-0 pl-2 pr-3">
           {event.start.toLocaleTimeString().split(":")[0]}&nbsp;to&nbsp;
           {event.end.toLocaleTimeString().split(":")[0]}&nbsp;

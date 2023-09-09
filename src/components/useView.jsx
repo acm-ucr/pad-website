@@ -16,7 +16,7 @@ const useView = (offset = 0) => {
   useEffect(() => {
     document.addEventListener("scroll", onScroll, true);
     return () => document.removeEventListener("scroll", onScroll, true);
-  });
+  }, []);
   return [inView, ref];
 };
 

@@ -2,7 +2,7 @@ import Boxessvg from "../svg/Boxessvg";
 
 const ContactSendEmail = () => {
   return (
-    <div className="bg-pad-purple h-full w-1/2 flex flex-col p-3 justify-between">
+    <div className="bg-pad-purple h-full w-full md:w-1/2 flex flex-col p-3 justify-between">
       <Boxessvg color="#C3ACD0" className="w-1/4 self-end" />
       <p className="font-playfair font-bold text-pad-lightpurple text-3xl">
         Anonymous Forum

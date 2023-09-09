@@ -3,7 +3,7 @@ import Scalesvg from "./svg/Scalesvg.jsx";
 import Image from "next/image.js";
 import LOGO from "../../public/LOGO.png";
 import Link from "next/link.js";
-import { Socials } from "./data/links.js";
+import { Socials } from "@/data/links.js";
 
 const Footer = () => {
   return (
@@ -23,7 +23,7 @@ const Footer = () => {
           />
         </div>
         <div className="">
-          <div className="whitespace-nowrap text-white text-sm md:text-xl lg:text-7xl ">
+          <div className="whitespace-nowrap text-white text-sm md:text-xl lg:text-7xl">
             ΦΑΔ
           </div>
           <div className="whitespace-nowrap text-white text-sm">
