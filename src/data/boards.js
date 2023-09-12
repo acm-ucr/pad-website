@@ -1,34 +1,108 @@
-import BoardPlaceHolder from "../../public/boards/boardPlaceholder.png";
+import AdamKim from "../../public/boards/Adam Kim Director of Social Events 1.jpg";
+import DeniseChao from "../../public/boards/Denise Chao President.jpeg";
+import DinaraGodage from "../../public/boards/Dinara Godage Director of Academics.jpeg";
+import EthanLee from "../../public/boards/Ethan Lee Treasurer.jpeg";
+import HanaHassan from "../../public/boards/Hana Hassan Director of Membership.jpeg";
+import JasmineEsmail from "../../public/boards/Jasmine Esmail Professional Development Chair 1.jpg";
+import KevinDo from "../../public/boards/Kevin Do Director of Fundraising.jpeg";
+import LaurenTran from "../../public/boards/Lauren Tran Director of Marketing.jpeg";
+import MatthewAu from "../../public/boards/Matthew Au Director of Philanthropy.jpeg";
+import RaffiFaul from "../../public/boards/Raffi Faul Parliamentarian.jpeg";
+import SerenaMendoza from "../../public/boards/Serena Mendoza Professional Development Chair.jpeg";
+import ShadieOlandj from "../../public/boards/Shadie Olandj Vice President.jpeg";
+import ShainaTroun from "../../public/boards/Shaina Troung Director of Marketing.jpeg";
+import ShawnDahlmeier from "../../public/boards/Shawn Dahlmeier Membership Development Chair.jpeg";
+import SimranKohli from "../../public/boards/Simran Kohli Secretary.jpeg";
 
 export const boardMembers = [
   {
-    position: "Position Title P",
-    name: "Firstname Lastname ",
-    image: BoardPlaceHolder,
+    width: 6,
+    position: "President",
+    name: "Denise Chao",
+    image: DeniseChao,
   },
   {
-    position: "Position Title VP",
-    name: "Firstname Lastname 2",
-    image: BoardPlaceHolder,
+    width: 6,
+    position: "Vice President",
+    name: "Shadie Olandj",
+    image: ShadieOlandj,
   },
   {
-    position: "Position Title T",
-    name: "Firstname Lastname 3",
-    image: BoardPlaceHolder,
+    width: 3,
+    position: "Secretary",
+    name: "Simran Kohli",
+    image: SimranKohli,
   },
   {
-    position: "Position Title S",
-    name: "Firstname Lastname 4",
-    image: BoardPlaceHolder,
+    width: 3,
+    position: "Director of Social Events",
+    name: "Adam Kim",
+    image: AdamKim,
   },
   {
-    position: "Position Title SM",
-    name: "Firstname Lastname 5",
-    image: BoardPlaceHolder,
+    width: 3,
+    position: "Director of Academics",
+    name: "Dinara Godage",
+    image: DinaraGodage,
   },
   {
-    position: "Position Title A",
-    name: "Firstname Lastname 6",
-    image: BoardPlaceHolder,
+    width: 3,
+    position: "Director of Fundraising",
+    name: "Kevin Do",
+    image: KevinDo,
+  },
+  {
+    width: 3,
+    position: "Director of Marketing",
+    name: "Lauren Tran",
+    image: LaurenTran,
+  },
+  {
+    width: 3,
+    position: "Director of Marketing",
+    name: "Shaina Troun",
+    image: ShainaTroun,
+  },
+  {
+    width: 3,
+    position: "Director of Philanthropy",
+    name: "Matthew Au",
+    image: MatthewAu,
+  },
+  {
+    width: 3,
+    position: "Director of Membership",
+    name: "Hana Hassan",
+    image: HanaHassan,
+  },
+  {
+    width: 3,
+    position: "Membership Development Chair",
+    name: "Shawn Dahlmeier",
+    image: ShawnDahlmeier,
+  },
+  {
+    width: 3,
+    position: "Treasurer",
+    name: "Ethan Lee",
+    image: EthanLee,
+  },
+  {
+    width: 3,
+    position: "Parliamentarian",
+    name: "Raffi Faul",
+    image: RaffiFaul,
+  },
+  {
+    width: 3,
+    position: "Professional Development Chair",
+    name: "Jasmine Esmail",
+    image: JasmineEsmail,
+  },
+  {
+    width: 3,
+    position: "Professional Development Chair",
+    name: "Serena Mendoza",
+    image: SerenaMendoza,
   },
 ];

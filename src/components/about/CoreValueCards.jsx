@@ -10,6 +10,7 @@ const CoreValueCards = () => {
         {coreValues.map((coreValue, index) => (
           <CoreValueCard
             key={index}
+            index={index}
             icon={coreValue.icon}
             text={coreValue.text}
           />
