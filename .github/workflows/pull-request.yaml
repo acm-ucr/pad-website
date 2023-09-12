@@ -33,6 +33,10 @@ jobs:
     name: build
     runs-on: ubuntu-latest
 
+    env:
+      NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY: ${{secrets.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}}
+      NEXT_PUBLIC_CALENDAR_ID: ${{secrets.NEXT_PUBLIC_CALENDAR_ID}}
+
     steps:
       - uses: actions/checkout@v3
       - name: Use Node.js

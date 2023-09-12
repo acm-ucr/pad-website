@@ -1,17 +1,15 @@
 "use client";
 import Row from "react-bootstrap/Row";
-import { boardMembers } from "../data/boards";
+import { boardMembers } from "@/data/boards";
 import Board from "./Board";
 
 const Boards = () => {
   return (
-    <div className="flex justify-center animate-fade-up animate-delay-[300ms] animate-once">
-      <Row className="my-6 p-0 flex justify-start w-9/12">
-        {boardMembers.map((member, idx) => (
-          <Board member={member} key={idx} />
-        ))}
-      </Row>
-    </div>
+    <Row className="my-6 p-0 flex justify-center w-9/12 animate-fade-up animate-delay-[300ms] animate-once">
+      {boardMembers.map((member, idx) => (
+        <Board member={member} key={idx} index={idx} />
+      ))}
+    </Row>
   );
 };
 

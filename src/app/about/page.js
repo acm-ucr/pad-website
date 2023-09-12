@@ -3,10 +3,10 @@ import CoreValueCards from "@/components/about/CoreValueCards";
 import about from "../../../public/headers/about.png";
 import Header from "@/components/Header";
 import Picture from "@/components/about/Picture";
-import PAD3 from "../../../public/images/PAD3.png";
-import PAD4 from "../../../public/images/PAD4.png";
+import PAD1 from "../../../public/images/Initiation/IMG_0809.jpg";
+import PAD2 from "../../../public/images/Initiation/IMG_1083.jpg";
+import PAD3 from "../../../public/images/Initiation/F58F3E8D-74CD-4AB9-B4E8-FEF91AAE3249_1_105_c.jpg";
 import PictureCarousel from "@/components/about/PictureCarousel";
-import landing from "../../../public/headers/landing.png";
 
 const AboutPage = () => {
   return (
@@ -25,7 +25,7 @@ const AboutPage = () => {
           chapter and the other members of Phi Alpha Delta to develop a strong
           understanding of professional fraternalism among its members.
         </p>
-        <Picture picture={PAD3} />
+        <Picture picture={PAD1} />
         <Title title="Our Mission" />
         <p className="textsm md:text-lg w-11/12 md:w-9/12 font-playfair my-2 md:my-5">
           Our main events strive to promote the ideals of brotherhood in
@@ -50,11 +50,9 @@ const AboutPage = () => {
           experiences, Phi Alpha Delta is a diversified organization that
           provides opportunities in every aspect!
         </p>
-        <Picture picture={PAD4} />
+        <Picture picture={PAD2} />
         <Title title="Activities and Socials" />
-        <div className="w-full md:w-2/3">
-          <PictureCarousel />
-        </div>
+        <PictureCarousel />
         <Title title="DECLARATION OF PURPOSE" />
         <p className="text-sm md:text-lg font-playfair my-2 md:my-5 w-11/12 md:w-9/12">
           The purpose of this Fraternity shall be to form a strong bond uniting
@@ -67,7 +65,7 @@ const AboutPage = () => {
           so that each member may enjoy a<br /> life time of honorable
           professional and public service.
         </p>
-        <Picture picture={landing} />
+        <Picture picture={PAD3} />
       </div>
     </>
   );

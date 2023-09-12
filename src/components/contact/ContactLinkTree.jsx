@@ -1,46 +1,45 @@
 "use client";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { Socials } from "../data/links";
+import { Socials } from "@/data/links";
+import Link from "next/link";
 
 const ContactLinkTree = () => {
   return (
-    <div className="bg-white w-1/2 h-full p-5 flex flex-col justify-between">
-      <div className="font-playfair text-5xl text-pad-lightpurple font-bold w-full">
+    <div className="bg-white w-full md:w-1/2 h-full p-5 flex flex-col justify-between">
+      <div className="font-playfair text-2xl md:text-5xl text-pad-lightpurple font-bold w-full">
         Email Us
       </div>
       <div className="flex flex-col mt-14">
-        <a
+        <Link
           href="mailto:membership@ucrpad.org"
-          className="text-xl font-playfair text-pad-purple hover:scale-105 no-underline duration-300"
+          className="text-base md:text-xl font-playfair text-pad-purple hover:scale-105 no-underline duration-300"
         >
           membership@ucrpad.org
-        </a>
-        <a
+        </Link>
+        <Link
           href="mailto:president@ucrpad.org"
-          className="text-xl font-playfair text-pad-purple hover:scale-105 no-underline duration-300"
+          className="text-base md:text-xl font-playfair text-pad-purple hover:scale-105 no-underline duration-300"
         >
           president@ucrpad.org
-        </a>
+        </Link>
       </div>
       <Row className="flex w-full justify-evenly">
-        {Socials.map((link, index) => {
-          return (
-            <Col key={index} xs="3" className="flex justify-center">
-              <div className="border-3 border-pad-darkpurple py-2 px-2 rotate-45">
-                <a
-                  href={link.path}
-                  rel="noreferrer"
-                  target="_blank"
-                  title={link.title}
-                  className="text-pad-purple hover:text-pad-lightpurple no-underline duration-300"
-                >
-                  <div className="text-4xl -rotate-45">{link.image}</div>
-                </a>
+        {Socials.map((link, index) => (
+          <Col key={index} xs="3" className="flex justify-center">
+            <Link
+              href={link.path}
+              rel="noreferrer"
+              target="_blank"
+              title={link.title}
+              className="text-pad-purple hover:text-pad-lightpurple no-underline duration-300 border-3 border-pad-darkpurple p-2 rotate-45"
+            >
+              <div className="text-2xl md:text-4xl -rotate-45">
+                {link.image}
               </div>
-            </Col>
-          );
-        })}
+            </Link>
+          </Col>
+        ))}
       </Row>
     </div>
   );

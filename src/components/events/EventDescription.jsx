@@ -1,6 +1,14 @@
-const EventDescription = ({ event }) => {
+import useView from "../useView";
+
+const EventDescription = ({ event, index }) => {
+  const [inView, ref] = useView();
   return (
-    <div className="w-full flex-col flex my-5">
+    <div
+      ref={ref}
+      className={`${
+        inView && `animate-fade-up animate-once animate-delay-[${index}00ms]`
+      } w-full flex-col flex my-5`}
+    >
       <div className="md:-translate-x-5 font-playfair text-pad-black text-xl md:text-2xl font-bold self-start">
         {event.summary}
       </div>
@@ -10,7 +18,7 @@ const EventDescription = ({ event }) => {
       </div>
 
       <div className="flex flex-row font-playfair text-pad-lightpurple text-base">
-        <p className="m-0 ">{event.start.toLocaleDateString()}</p>
+        <p className="m-0">{event.start.toLocaleDateString()}</p>
         <p className="m-0 pl-2 pr-3">
           {event.start.toLocaleTimeString().split(":")[0]}&nbsp;to&nbsp;
           {event.end.toLocaleTimeString().split(":")[0]}&nbsp;

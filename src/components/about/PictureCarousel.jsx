@@ -3,30 +3,9 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { RxDotFilled } from "react-icons/rx";
 import { useState } from "react";
 import Image from "next/image";
-import PAD5 from "../../../public/images/PAD5.png";
-import PAD1 from "../../../public/images/PAD1.png";
-import PAD2 from "../../../public/images/PAD2.png";
-import PAD3 from "../../../public/images/PAD3.png";
+import { slides } from "@/data/pictures";
 
 const PictureCarousel = () => {
-  const slides = [
-    {
-      description: "Phi Alpha Delta Retreat 2022",
-      src: PAD5,
-    },
-    {
-      description: "Hello World",
-      src: PAD1,
-    },
-    {
-      description: "Meow",
-      src: PAD2,
-    },
-    {
-      description: "Wow",
-      src: PAD3,
-    },
-  ];
   const [currentIdx, setCurrentIdx] = useState(0);
 
   const prevSlide = () => {
@@ -46,20 +25,20 @@ const PictureCarousel = () => {
   };
 
   return (
-    <div className="h-[300px] md:h-[480px] w-full m-auto group flex-col flex items-center justify-center">
-      <div className="h-full items-center justify-center flex">
+    <div className="h-[280px] md:h-[480px] w-full flex-col flex items-center md:w-2/3 my-10">
+      <div className="h-full items-center justify-between flex w-full">
         <AiOutlineArrowLeft
           onClick={prevSlide}
           size={70}
           className="text-pad-purple cursor-pointer text-xl"
         />
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center w-full h-full">
           <p className="m-0 font-playfair text-pad-black text-base md:text-2xl">
             {slides[currentIdx].description}
           </p>
           <Image
             src={slides[currentIdx].src}
-            className="w-10/12 duration-300"
+            className="w-10/12 duration-300 object-contain h-full"
           />
         </div>
 

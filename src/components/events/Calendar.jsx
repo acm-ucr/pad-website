@@ -10,14 +10,14 @@ import Modal from "./Modal.jsx";
 const localizer = momentLocalizer(moment);
 
 const CalendarEvent = ({ events }) => {
-  const [modalEvent, setModalEvent] = useState(null);
+  const [event, setEvent] = useState(null);
 
   return (
-    <section className="w-full flex justify-center items-center flex-col mt-[2vh] text-xl">
-      <div className="w-10/12 flex justify-center items-center text-xl">
-        <div className="h-[110vh] w-full relative text-xl mb-24">
+    <section className="w-full flex justify-center items-center flex-col mt-[2vh]">
+      <div className="w-10/12 flex justify-center items-center">
+        <div className="h-[80vh] h-[100vh] w-full relative mb-24">
           <Calendar
-            className="font-playfair w-full m-0 p-0 text-2xl"
+            className="font-playfair w-full m-0 p-0 text-sm md:text-2xl"
             events={events}
             localizer={localizer}
             defaultView="month"
@@ -31,17 +31,15 @@ const CalendarEvent = ({ events }) => {
                 className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
               };
             }}
-            onSelectEvent={(event) => {
-              setModalEvent(event);
-            }}
+            onSelectEvent={(event) => setEvent(event)}
             dayPropGetter={(event) => {
-              const bg =
-                new Date(event).toLocaleDateString() ==
-                new Date().toLocaleDateString()
-                  ? "!bg-opacity-40 !bg-pad-textshadow"
-                  : "!bg-transparent";
               return {
-                className: `${bg}`,
+                className: `${
+                  new Date(event).toLocaleDateString() ==
+                  new Date().toLocaleDateString()
+                    ? "!bg-opacity-40 !bg-pad-textshadow"
+                    : "!bg-transparent"
+                }`,
                 style: {
                   margin: 0,
                   padding: 0,
@@ -50,7 +48,7 @@ const CalendarEvent = ({ events }) => {
             }}
           />
         </div>
-        <Modal event={modalEvent} setState={setModalEvent} />
+        {event && <Modal event={event} setEvent={setEvent} />}
       </div>
     </section>
   );

@@ -1,6 +1,15 @@
+"use client";
+import useView from "./useView";
+
 const Title = ({ title }) => {
+  const [inView, ref] = useView();
   return (
-    <div className="relative w-full mt-14">
+    <div
+      className={`${
+        inView && "animate-fade-down animate-once"
+      } relative w-full mt-14`}
+      ref={ref}
+    >
       <div className="absolute text-pad-textshadow text-5xl md:text-7xl font-bold font-playfair -left-8 bottom-3 whitespace-nowrap">
         {title}
       </div>
