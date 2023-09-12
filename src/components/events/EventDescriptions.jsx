@@ -7,7 +7,7 @@ const EventDescriptions = ({ events }) => {
       <Title title="Upcoming Events" />
       <div className="self-center w-9/12">
         {events.map((event, index) => (
-          <EventDescription key={index} event={event} />
+          <EventDescription key={index} event={event} index={index} />
         ))}
       </div>
     </div>

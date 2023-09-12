@@ -1,12 +1,12 @@
 import Col from "react-bootstrap/Col";
 import Image from "next/image";
 
-const Board = ({ member }) => {
+const Board = ({ member, index }) => {
   return (
     <Col
       sm={member.width * 2}
       md={member.width}
-      className="p-4 flex items-center justify-center"
+      className={`${`animate-fade-right animate-once animate-delay-[${index}00ms] animate-delay-${index}00`} p-4 flex items-center justify-center`}
     >
       <div className="w-[200px] h-[300px] relative">
         <Image
