@@ -10,14 +10,14 @@ import Modal from "./Modal.jsx";
 const localizer = momentLocalizer(moment);
 
 const CalendarEvent = ({ events }) => {
-  const [event, setevent] = useState(null);
+  const [event, setEvent] = useState(null);
 
   return (
-    <section className="w-full flex justify-center items-center flex-col mt-[2vh] text-xl">
-      <div className="w-10/12 flex justify-center items-center text-xl">
-        <div className="h-[110vh] w-full relative text-xl mb-24">
+    <section className="w-full flex justify-center items-center flex-col mt-[2vh]">
+      <div className="w-10/12 flex justify-center items-center">
+        <div className="h-[80vh] h-[100vh] w-full relative mb-24">
           <Calendar
-            className="font-playfair w-full m-0 p-0 text-2xl"
+            className="font-playfair w-full m-0 p-0 text-sm md:text-2xl"
             events={events}
             localizer={localizer}
             defaultView="month"
@@ -31,7 +31,7 @@ const CalendarEvent = ({ events }) => {
                 className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
               };
             }}
-            onSelectEvent={(event) => setevent(event)}
+            onSelectEvent={(event) => setEvent(event)}
             dayPropGetter={(event) => {
               return {
                 className: `${
