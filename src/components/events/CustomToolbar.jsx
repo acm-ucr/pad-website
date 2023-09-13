@@ -27,7 +27,7 @@ const CustomToolbar = (event) => {
           <Col
             key={index}
             xs={9}
-            md={3}
+            sm={3}
             className={`w-full ${filter.color} whitespace-nowrap text-center text-sm md:text-lg rounded-sm flex justify-center p-0 m-0`}
           >
             {filter.topic}
