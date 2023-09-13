@@ -13,11 +13,11 @@ const AboutSection = () => {
         className="rotate-90 origin-bottom-left top-10 -left-20 md:left-0 absolute -translate-y-full w-1/2"
       />
       <Boxessvg color="#E7DBDF" className="w-1/6 self-end md:mr-5 h-fit mt-2" />
-      <div className="w-3/4 self-end">
+      <div className="animate-fade-up animate-delay-[600ms] animate-once w-3/4 self-end">
         <p className="text-xl md:text-4xl text-pad-lightpurple font-bold ml-8 my-0 md:my-2">
           About Us
         </p>
-        <div className="text-2xl md:text-5xl font-bold border-l-8 border-pad-lightpurple py-3 pl-3">
+        <div className="animate-fade-up animate-delay-[600ms] animate-once text-2xl md:text-5xl font-bold border-l-8 border-pad-lightpurple py-3 pl-3">
           <p>Welcome to Phi Alpha Delta</p>
           <p className="text-base md:text-2xl w-2/3">
             We are the preeminent law fraternity promoting the bonds of
