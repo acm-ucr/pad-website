@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ContactLinkTree = () => {
   return (
-    <div className="bg-white w-full md:w-1/2 h-full p-5 flex flex-col justify-between">
+    <div className="bg-white w-full md:w-2/3 h-full p-5 flex flex-col justify-between">
       <div className="font-playfair text-2xl md:text-5xl text-pad-lightpurple font-bold w-full">
         Email Us
       </div>
