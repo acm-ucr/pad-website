@@ -1,6 +1,6 @@
 "use client";
 import Scalesvg from "../svg/Scalesvg";
-import PAD1 from "../../../public/images/Initiation/A70C1A3E-CB16-4F17-B9F6-60272C835457_1_105_c.jpg";
+import PAD1 from "../../../public/images/Initiation/A70C1A3E-CB16-4F17-B9F6-60272C835457_1_105_c.webp";
 import Image from "next/image";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";

@@ -21,7 +21,7 @@ const Navigation = () => {
           className="p-0 no-underline flex items-center gap-2"
           href="/"
         >
-          <img src="LOGO.png" className="w-8 md:w-14" />
+          <img src="LOGO.webp" className="w-8 md:w-14" />
           <div className="flex flex-col items-start">
             <div className="text-white mb-0 text-lg md:text-3xl">ΦA∆</div>
             <div className="text-white text-xs md:text-sm">Phi Alpha Delta</div>

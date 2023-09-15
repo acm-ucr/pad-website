@@ -4,7 +4,7 @@ import EventDescriptions from "@/components/events/EventDescriptions";
 import CalendarEvent from "@/components/events/Calendar";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import event from "../../../public/headers/events.png";
+import event from "../../../public/headers/events.webp";
 
 const EvnetsPage = () => {
   const [events, setEvents] = useState([]);
