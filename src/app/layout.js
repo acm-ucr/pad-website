@@ -17,7 +17,7 @@ const source = Source_Serif_4({
 
 export const metadata = {
   title: "Phi Alpha Delta at UCR",
-  description: "UCR Phi Alpha Delta official website creatd  by ACM",
+  description: "UCR Phi Alpha Delta official website creatd by ACM",
 };
 
 export default function RootLayout({ children }) {
