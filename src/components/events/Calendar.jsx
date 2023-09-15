@@ -15,7 +15,7 @@ const CalendarEvent = ({ events }) => {
   return (
     <section className="w-full flex justify-center items-center flex-col mt-[2vh]">
       <div className="w-10/12 flex justify-center items-center">
-        <div className="h-[80vh] h-[100vh] w-full relative mb-24">
+        <div className="h-[80vh] w-full relative mb-24">
           <Calendar
             className="font-playfair w-full m-0 p-0 text-sm md:text-2xl"
             events={events}

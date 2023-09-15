@@ -11,8 +11,8 @@ const EventDescriptions = ({ events }) => {
             <EventDescription key={index} event={event} index={index} />
           ))
         ) : (
-          <p className="font-playfair text-lg w-full text-center font-bold text-pad-purple">
-            no events
+          <p className="font-playfair text-lg w-full text-center font-bold text-pad-purple mt-5">
+            no upcoming events
           </p>
         )}
       </div>
