@@ -1,18 +1,18 @@
-import AdamKim from "../../public/boards/Adam Kim Director of Social Events 1.jpg";
-import DeniseChao from "../../public/boards/Denise Chao President.jpeg";
-import DinaraGodage from "../../public/boards/Dinara Godage Director of Academics.jpeg";
-import EthanLee from "../../public/boards/Ethan Lee Treasurer.jpeg";
-import HanaHassan from "../../public/boards/Hana Hassan Director of Membership.jpeg";
-import JasmineEsmail from "../../public/boards/Jasmine Esmail Professional Development Chair 1.jpg";
-import KevinDo from "../../public/boards/Kevin Do Director of Fundraising.jpeg";
-import LaurenTran from "../../public/boards/Lauren Tran Director of Marketing.jpeg";
-import MatthewAu from "../../public/boards/Matthew Au Director of Philanthropy.jpeg";
-import RaffiFaul from "../../public/boards/Raffi Faul Parliamentarian.jpeg";
-import SerenaMendoza from "../../public/boards/Serena Mendoza Professional Development Chair.jpeg";
-import ShadieOlandj from "../../public/boards/Shadie Olandj Vice President.jpeg";
-import ShainaTroun from "../../public/boards/Shaina Troung Director of Marketing.jpeg";
-import ShawnDahlmeier from "../../public/boards/Shawn Dahlmeier Membership Development Chair.jpeg";
-import SimranKohli from "../../public/boards/Simran Kohli Secretary.jpeg";
+import AdamKim from "../../public/boards/Adam Kim Director of Social Events 1.webp";
+import DeniseChao from "../../public/boards/Denise Chao President.webp";
+import DinaraGodage from "../../public/boards/Dinara Godage Director of Academics.webp";
+import EthanLee from "../../public/boards/Ethan Lee Treasurer.webp";
+import HanaHassan from "../../public/boards/Hana Hassan Director of Membership.webp";
+import JasmineEsmail from "../../public/boards/Jasmine Esmail Professional Development Chair 1.webp";
+import KevinDo from "../../public/boards/Kevin Do Director of Fundraising.webp";
+import LaurenTran from "../../public/boards/Lauren Tran Director of Marketing.webp";
+import MatthewAu from "../../public/boards/Matthew Au Director of Philanthropy.webp";
+import RaffiFaul from "../../public/boards/Raffi Faul Parliamentarian.webp";
+import SerenaMendoza from "../../public/boards/Serena Mendoza Professional Development Chair.webp";
+import ShadieOlandj from "../../public/boards/Shadie Olandj Vice President.webp";
+import ShainaTroun from "../../public/boards/Shaina Troung Director of Marketing.webp";
+import ShawnDahlmeier from "../../public/boards/Shawn Dahlmeier Membership Development Chair.webp";
+import SimranKohli from "../../public/boards/Simran Kohli Secretary.webp";
 
 export const boardMembers = [
   {

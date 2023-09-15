@@ -1,11 +1,11 @@
 import UCRBenefits from "@/components/join/UCRBenefits";
 import NationalBenefits from "@/components/join/NationalBenefits";
-import join from "../../../public/headers/join.png";
+import join from "../../../public/headers/join.webp";
 import Header from "@/components/Header";
 import HowToJoin from "@/components/join/HowToJoin";
 import Title from "@/components/Title";
 import Picture from "@/components/about/Picture";
-import pic from "../../../public/images/Initiation/B8FCA0C7-CE95-4AF7-882B-4B6C8A5F177E_1_105_c.jpg";
+import pic from "../../../public/images/Initiation/B8FCA0C7-CE95-4AF7-882B-4B6C8A5F177E_1_105_c.webp";
 
 const JoinPage = () => {
   return (

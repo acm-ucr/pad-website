@@ -1,11 +1,11 @@
 import Title from "@/components/Title";
 import CoreValueCards from "@/components/about/CoreValueCards";
-import about from "../../../public/headers/about.png";
+import about from "../../../public/headers/about.webp";
 import Header from "@/components/Header";
 import Picture from "@/components/about/Picture";
-import PAD1 from "../../../public/images/Initiation/IMG_0809.jpg";
-import PAD2 from "../../../public/images/Initiation/IMG_1083.jpg";
-import PAD3 from "../../../public/images/Initiation/F58F3E8D-74CD-4AB9-B4E8-FEF91AAE3249_1_105_c.jpg";
+import PAD1 from "../../../public/images/Initiation/IMG_0809.webp";
+import PAD2 from "../../../public/images/Initiation/IMG_1083.webp";
+import PAD3 from "../../../public/images/Initiation/F58F3E8D-74CD-4AB9-B4E8-FEF91AAE3249_1_105_c.webp";
 import PictureCarousel from "@/components/about/PictureCarousel";
 
 const AboutPage = () => {

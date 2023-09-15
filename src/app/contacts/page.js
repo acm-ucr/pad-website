@@ -1,4 +1,4 @@
-import contacts from "../../../public/headers/contacts.png";
+import contacts from "../../../public/headers/contacts.webp";
 import Header from "@/components/Header";
 import ContactLinkTree from "@/components/contact/ContactLinkTree";
 

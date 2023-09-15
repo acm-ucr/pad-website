@@ -1,7 +1,7 @@
 import PADsvg from "./svg/PADsvg.jsx";
 import Scalesvg from "./svg/Scalesvg.jsx";
 import Image from "next/image.js";
-import LOGO from "../../public/LOGO.png";
+import LOGO from "../../public/LOGO.webp";
 import Link from "next/link.js";
 import { Socials } from "@/data/links.js";
 
