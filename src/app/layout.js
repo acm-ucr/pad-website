@@ -23,9 +23,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${playfair.variable} ${source.variable}`}>
-      <head>
-        <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-      </head>
       <body className="bg-pad-beige flex items-center justify-center flex-col">
         <Navigation />
         <div className="w-full flex flex-col min-h-screen overflow-hidden items-center justify-center mb-20">
