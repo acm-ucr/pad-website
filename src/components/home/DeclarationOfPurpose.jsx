@@ -38,7 +38,7 @@ const DeclarationOfPurpose = () => {
         <div
           className={`${
             inView && "animate-fade-right animate-once"
-          } relative font-playfair w-3/4 text-pad-beige text-md md:text-lg lg:text-xl justify-self-end self-center`}
+          } relative font-playfair w-3/4 text-pad-beige text-md md:text-lg lg:text-2xl justify-self-end self-center mb-28 `}
         >
           The purpose of this Fraternity shall be to form a strong bond uniting
           students and teachers of the lawwith members of the Bench and Bar in a
