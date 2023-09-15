@@ -31,7 +31,7 @@ const AboutSection = () => {
           <p>Welcome to Phi Alpha Delta</p>
           <p className="text-base md:text-xl w-2/3">
             We are the preeminent law fraternity promoting the bonds of
-            fraternalism and we are theleader in the devolopment advancement of
+            fraternalism and we are the leader in the devolopment advancement of
             professional ideals.
           </p>
         </div>
