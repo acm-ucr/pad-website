@@ -15,7 +15,7 @@ const Modal = ({ event, setEvent }) => {
       <div className="p-3">
         <p className="m-0 pl-2">{event.location}</p>
         {event.allDay ? (
-          <p>{event.start.toLocaleTimeString()}</p>
+          <p>{event.start.toLocaleDateString()}</p>
         ) : (
           <p className="m-0 pl-2">
             {event.start.toLocaleTimeString().split(":")[0]}&nbsp;to&nbsp;
