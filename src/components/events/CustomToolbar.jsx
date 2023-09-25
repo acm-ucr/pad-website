@@ -22,15 +22,14 @@ const CustomToolbar = (event) => {
         <p className="m-0">{monthNames[event.date.getMonth()]}</p>
         <p className="m-0">{event.date.getFullYear()}</p>
       </div>
-      <Row className="w-10/12 md:w-2/3 m-0 p-0 flex justify-center md:justify-end justify-items-center items-center">
+      <Row className="w-10/12 md:w-3/4 m-0 p-0 flex justify-center md:justify-end justify-items-center items-center">
         {filters.map((filter, index) => (
-          <Col
-            key={index}
-            xs={9}
-            sm={3}
-            className={`w-full ${filter.color} whitespace-nowrap text-center text-sm md:text-lg rounded-sm flex justify-center p-0 m-1`}
-          >
-            {filter.topic}
+          <Col key={index} xs={9} sm={3} className="p-1">
+            <p
+              className={`${filter.color} whitespace-nowrap text-center text-sm md:text-base rounded-sm m-0`}
+            >
+              {filter.topic}
+            </p>
           </Col>
         ))}
       </Row>
