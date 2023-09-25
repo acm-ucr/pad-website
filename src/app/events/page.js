@@ -9,7 +9,6 @@ import event from "../../../public/headers/events.webp";
 const EvnetsPage = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    console.log(new Date().getMonth());
     axios
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${
@@ -29,7 +28,6 @@ const EvnetsPage = () => {
         ).toISOString()}`
       )
       .then((result) => {
-        console.log(result.data.items);
         setEvents(
           result.data.items.map((event) => ({
             ...event,
@@ -49,7 +47,6 @@ const EvnetsPage = () => {
         );
       });
   }, []);
-  console.log(events);
   return (
     <>
       <Header title="Events" src={event} />
