@@ -18,12 +18,18 @@ const EventDescription = ({ event, index }) => {
       </div>
 
       <div className="flex flex-row font-playfair text-pad-lightpurple text-base">
-        <p className="m-0">{event.start.toLocaleDateString()}</p>
-        <p className="m-0 pl-2 pr-3">
-          {event.start.toLocaleTimeString().split(":")[0]}&nbsp;to&nbsp;
-          {event.end.toLocaleTimeString().split(":")[0]}&nbsp;
-          {event.end.toLocaleTimeString().split(":")[2].split(" ")[1]}
-        </p>
+        {!event.allDay ? (
+          <>
+            <p className="m-0">{event.start.toLocaleDateString()}</p>
+            <p className="m-0 pl-2 pr-3">
+              {event.start.toLocaleTimeString().split(":")[0]}&nbsp;to&nbsp;
+              {event.end.toLocaleTimeString().split(":")[0]}&nbsp;
+              {event.end.toLocaleTimeString().split(":")[2].split(" ")[1]}
+            </p>
+          </>
+        ) : (
+          <p className="m-0">{event.start.toLocaleDateString()}</p>
+        )}
         <p className="m-0 font-bold">{event.location}</p>
       </div>
 
@@ -34,14 +40,10 @@ const EventDescription = ({ event, index }) => {
       <div
         className={
           "w-40 font-playfair text-center text-sm md:text-lg self-end " +
-          (event.description?.startsWith("Social")
-            ? "text-white bg-pad-purple"
-            : event.description.startsWith("General Meeting")
-            ? "text-black bg-pad-textshadow"
-            : "bg-pad-lightpurple text-black")
+          event.color
         }
       >
-        {event.description.split(":")[0]}
+        {event.description?.split(":")[0] || "Other"}
       </div>
     </div>
   );
