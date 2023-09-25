@@ -9,25 +9,47 @@ import event from "../../../public/headers/events.webp";
 const EvnetsPage = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
+    console.log(new Date().getMonth());
     axios
       .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_CALENDAR_ID}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=starttime`
+        `https://www.googleapis.com/calendar/v3/calendars/${
+          process.env.NEXT_PUBLIC_CALENDAR_ID
+        }/events?key=${
+          process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY
+        }&singleEvents=true&orderBy=starttime&timeMin=${new Date(
+          new Date().getFullYear(),
+          new Date().getMonth(),
+          1
+        ).toISOString()}&timeMax=${new Date(
+          new Date().getMonth() === 11
+            ? new Date().getFullYear() + 1
+            : new Date().getFullYear(),
+          new Date().getMonth() === 11 ? 0 : new Date().getMonth() + 1,
+          1
+        ).toISOString()}`
       )
-      .then((result) =>
+      .then((result) => {
+        console.log(result.data.items);
         setEvents(
           result.data.items.map((event) => ({
             ...event,
-            start: new Date(event.start.dateTime),
-            end: new Date(event.end.dateTime),
-            color: event.description?.startsWith("General Meeting")
+            allDay: event.start.dateTime ? false : true,
+            start: event.start.dateTime
+              ? new Date(event.start.dateTime)
+              : new Date(event.start.date + "T00:00:00-07:00"),
+            end: new Date(event.end.dateTime || event.end.date),
+            color: event.description
+              ?.toLowerCase()
+              .startsWith("general meeting")
               ? "bg-pad-textshadow text-black"
-              : event.description?.startsWith("Social")
+              : event.description?.toLowerCase().startsWith("social")
               ? "bg-pad-purple text-white"
               : "bg-pad-lightpurple text-black",
           }))
-        )
-      );
+        );
+      });
   }, []);
+  console.log(events);
   return (
     <>
       <Header title="Events" src={event} />

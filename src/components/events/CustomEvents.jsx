@@ -2,10 +2,11 @@ const CustomEvent = ({ event }) => {
   return (
     <div className={`font-playfair ${event.color} text-sm flex justify-start`}>
       <p className="whitespace-nowrap m-0">
-        {new Date(event.start).toLocaleTimeString(navigator.language, {
-          hour: "2-digit",
-          minute: "2-digit",
-        })}
+        {!event.allDay &&
+          new Date(event.start).toLocaleTimeString(navigator.language, {
+            hour: "2-digit",
+            minute: "2-digit",
+          })}
         &nbsp;
         {event.summary}
       </p>

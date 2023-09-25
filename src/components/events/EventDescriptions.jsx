@@ -2,12 +2,13 @@ import EventDescription from "./EventDescription";
 import Title from "../Title";
 
 const EventDescriptions = ({ events }) => {
+  const upcomingEvents = events.filter((event) => event.end > new Date());
   return (
     <div className="w-full flex-col flex">
       <Title title="Upcoming Events" />
       <div className="self-center w-9/12">
-        {events.length > 0 ? (
-          events.map((event, index) => (
+        {upcomingEvents.length > 0 ? (
+          upcomingEvents.map((event, index) => (
             <EventDescription key={index} event={event} index={index} />
           ))
         ) : (

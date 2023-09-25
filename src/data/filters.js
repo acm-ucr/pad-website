@@ -4,7 +4,7 @@ const filters = [
     color: "bg-pad-textshadow text-black",
   },
   {
-    topic: "Other Meeting",
+    topic: "Other",
     color: "bg-pad-lightpurple text-black",
   },
   {

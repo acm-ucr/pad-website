@@ -17,6 +17,7 @@ const CalendarEvent = ({ events }) => {
       <div className="w-10/12 flex justify-center items-center">
         <div className="h-[80vh] w-full relative mb-24">
           <Calendar
+            allDayAccessor="allDay"
             className="font-playfair w-full m-0 p-0 text-sm md:text-2xl"
             events={events}
             localizer={localizer}
