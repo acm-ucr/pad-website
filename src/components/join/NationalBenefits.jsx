@@ -4,12 +4,11 @@ const NationalBenefits = () => {
       <div className="text-pad-purple font-bold font-playfair text-2xl border-b-4 border-pad-lightpurple w-fit">
         NATIONALS
       </div>
-
       <ul className="mt-3">
         <li className="indent-0 text-black font-playfair text-sm md:text-lg list-disc">
           National Directory
           <ol>
-            <li className="list-disc text-black font-playfair text-sm md:text-lg whitespace-pre-line">
+            <li className="list-disc text-black font-playfair text-sm md:text-lg ">
               List of every Phi Alpha Delta
               <p>member</p>
             </li>
