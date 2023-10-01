@@ -12,7 +12,6 @@ const localizer = momentLocalizer(moment);
 const CalendarEvent = ({ events }) => {
   const [event, setEvent] = useState(null);
   const [date, setDate] = useState(new Date());
-  console.log(date);
 
   return (
     <section className="w-full flex justify-center items-center flex-col mt-[2vh]">
