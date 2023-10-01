@@ -17,6 +17,7 @@ const Navigation = () => {
     >
       <Navbar.Brand className="p-0">
         <Link
+          onClick={() => setSelected("")}
           eventkey="1"
           className="p-0 no-underline flex items-center gap-2"
           href="/"
