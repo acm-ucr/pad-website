@@ -34,7 +34,7 @@ const Landing = () => {
           </p>
 
           <p className="animate-fade-up animate-delay-[600ms] animate-once font-playfair text-white text-xs md:text-lg self-start text-right md:my-2 pr-6 md:pr-12">
-            advancing intergrity, compassion, and courage through service to the
+            advancing integrity, compassion, and courage through service to the
             student, the school, the profession and the community
           </p>
           <Link
