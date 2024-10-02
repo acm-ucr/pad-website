@@ -1,108 +1,108 @@
-import AdamKim from "../../public/boards/Adam Kim Director of Social Events 1.webp";
-import DeniseChao from "../../public/boards/Denise Chao President.webp";
-import DinaraGodage from "../../public/boards/Dinara Godage Director of Academics.webp";
-import EthanLee from "../../public/boards/Ethan Lee Treasurer.webp";
-import HanaHassan from "../../public/boards/Hana Hassan Director of Membership.webp";
-import JasmineEsmail from "../../public/boards/Jasmine Esmail Professional Development Chair 1.webp";
-import KevinDo from "../../public/boards/Kevin Do Director of Fundraising.webp";
-import LaurenTran from "../../public/boards/Lauren Tran Director of Marketing.webp";
-import MatthewAu from "../../public/boards/Matthew Au Director of Philanthropy.webp";
-import RaffiFaul from "../../public/boards/Raffi Faul Parliamentarian.webp";
-import SerenaMendoza from "../../public/boards/Serena Mendoza Professional Development Chair.webp";
-import ShadieOlandj from "../../public/boards/Shadie Olandj Vice President.webp";
-import ShainaTroun from "../../public/boards/Shaina Troung Director of Marketing.webp";
-import ShawnDahlmeier from "../../public/boards/Shawn Dahlmeier Membership Development Chair.webp";
-import SimranKohli from "../../public/boards/Simran Kohli Secretary.webp";
+import SocialEvents from "../../public/boards/Adam Kim Director of Social Events 1.webp";
+import President from "../../public/boards/PresidentDinaraGodage.webp";
+import VP from "../../public/boards/VPMahliaTrang.webp";
+import Secretary from "../../public/boards/SecretaryKylieJordan.webp";
+import Treasurer from "../../public/boards/TreasurerRaghavShah.webp";
+import Academics from "../../public/boards/Dinara Godage Director of Academics.webp";
+import MembershipDirector from "../../public/boards/MembershipDirectorJasmineEsmail.webp";
+import ProfessionalDevelopment1 from "../../public/boards/Jasmine Esmail Professional Development Chair 1.webp";
+import Fundraising from "../../public/boards/Kevin Do Director of Fundraising.webp";
+import Marketing1 from "../../public/boards/Lauren Tran Director of Marketing.webp";
+import Philanthropy from "../../public/boards/Matthew Au Director of Philanthropy.webp";
+import Parliamentarian from "../../public/boards/ParliamentarianAshleyPadilla.webp";
+import ProfessionalDevelopment2 from "../../public/boards/Serena Mendoza Professional Development Chair.webp";
+import Marketing2 from "../../public/boards/Shaina Troung Director of Marketing.webp";
+import MembershipDevelopment from "../../public/boards/Shawn Dahlmeier Membership Development Chair.webp";
 
 export const boardMembers = [
   {
     width: 6,
     position: "President",
-    name: "Denise Chao",
-    image: DeniseChao,
+    name: "Dinara Godage",
+    image: President,
   },
   {
     width: 6,
     position: "Vice President",
-    name: "Shadie Olandj",
-    image: ShadieOlandj,
+    name: "Mahlia Trang",
+    image: VP,
   },
   {
     width: 4,
     position: "Secretary",
-    name: "Simran Kohli",
-    image: SimranKohli,
+    name: "Kylie Jordan",
+    image: Secretary,
   },
   {
     width: 4,
     position: "Director of Social Events",
     name: "Adam Kim",
-    image: AdamKim,
+    image: SocialEvents,
   },
   {
     width: 4,
     position: "Director of Academics",
     name: "Dinara Godage",
-    image: DinaraGodage,
+    image: Academics,
   },
   {
     width: 4,
     position: "Director of Fundraising",
     name: "Kevin Do",
-    image: KevinDo,
+    image: Fundraising,
   },
   {
     width: 4,
     position: "Director of Marketing",
     name: "Lauren Tran",
-    image: LaurenTran,
+    image: Marketing1,
   },
   {
     width: 4,
     position: "Director of Marketing",
     name: "Shaina Troun",
-    image: ShainaTroun,
+    image: Marketing2,
   },
   {
     width: 4,
     position: "Director of Philanthropy",
     name: "Matthew Au",
-    image: MatthewAu,
+    image: Philanthropy,
   },
   {
     width: 4,
     position: "Director of Membership",
-    name: "Hana Hassan",
-    image: HanaHassan,
+    name: "Jasmine Esmail",
+    image: MembershipDirector,
   },
   {
     width: 4,
     position: "Membership Development Chair",
     name: "Shawn Dahlmeier",
-    image: ShawnDahlmeier,
+    image: MembershipDevelopment,
   },
   {
     width: 4,
     position: "Treasurer",
-    name: "Ethan Lee",
-    image: EthanLee,
+    name: "Raghav Shah",
+    image: Treasurer,
   },
   {
     width: 4,
     position: "Parliamentarian",
-    name: "Raffi Faul",
-    image: RaffiFaul,
+    name: "Ashley Padilla",
+    image: Parliamentarian,
   },
   {
     width: 4,
     position: "Professional Development Chair",
     name: "Jasmine Esmail",
-    image: JasmineEsmail,
+    image: ProfessionalDevelopment1,
   },
   {
     width: 4,
     position: "Professional Development Chair",
     name: "Serena Mendoza",
-    image: SerenaMendoza,
+    image: ProfessionalDevelopment2,
   },
 ];
