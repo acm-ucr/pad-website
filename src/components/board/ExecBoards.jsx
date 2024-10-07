@@ -1,6 +1,6 @@
 "use client";
 import Row from "react-bootstrap/Row";
-import { boardMembers } from "@/data/boards";
+import { boardMembers } from "@/data/execboards";
 import Board from "./Board";
 
 const Boards = () => {
