@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
@@ -7,7 +7,7 @@ import { FaBars } from "react-icons/fa";
 import { items } from "@/data/navigation";
 
 const Navigation = () => {
-  const [selected, setSelected] = useState("");
+  const pathName = usePathname();
   return (
     <Navbar
       collapseOnSelect
@@ -17,7 +17,6 @@ const Navigation = () => {
     >
       <Navbar.Brand className="p-0">
         <Link
-          onClick={() => setSelected("")}
           eventkey="1"
           className="p-0 no-underline flex items-center gap-2"
           href="/"
@@ -37,17 +36,18 @@ const Navigation = () => {
       </Navbar.Toggle>
       <Navbar.Collapse className="items-center md:justify-end justify-center">
         <Nav className="mb-2 w-12/12 no-underline text-2xl flex items-center">
-          {items.map((item, index) => (
+          {items.map(({ name, link }, index) => (
             <Nav.Link
               as={Link}
               key={index}
-              href={item.link}
-              onClick={() => setSelected(item.name)}
-              className={`hover:cursor-pointer mb-0 py-1 px-4 no-underline !text-white text-2xl whitespace-nowrap !font-medium hover:!text-pad-lightpurple duration-300 ${
-                selected === item.name && "!bg-white/10"
+              href={link}
+              className={`hover:cursor-pointer hover:!bg-white/10 mb-0 py-1 px-4 no-underline !text-white text-2xl whitespace-nowrap !font-medium hover:!text-pad-lightpurple duration-300 ${
+                pathName === link
+                  ? "!bg-white/10 !text-pad-lightpurple"
+                  : "no-underline"
               }`}
             >
-              {item.name}
+              {name}
             </Nav.Link>
           ))}
           <Nav.Link
